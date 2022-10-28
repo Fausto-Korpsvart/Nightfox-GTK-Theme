@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Nightfox-Dusk
+Comment=An elegant GTK theme with the 'Nightfox Dusk' colour palette, and based on '@Vinceliuice's Graphite' GTK theme.
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Nightfox-Dusk
+MetacityTheme=Nightfox-Dusk
+IconTheme=Nightfox-Dusk
+CursorTheme=Nightfox-Dusk
+ButtonLayout=close,minimize,maximize:menu
