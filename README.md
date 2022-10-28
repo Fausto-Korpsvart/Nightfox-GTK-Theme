@@ -1,7 +1,7 @@
 # NightFox GTK Theme
 
-![Tokyo Night](https://raw.githubusercontent.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme/master/screenshots/Tokyonight.png)
-**Tokyonight GTK**
+![Duskfox](https://raw.githubusercontent.com/Fausto-Korpsvart/Nightfox-GTK-Theme/main/screenshots/Nightfox-Dusk.png)
+**Duskfox GTK**
 
 ## Small Description
 
