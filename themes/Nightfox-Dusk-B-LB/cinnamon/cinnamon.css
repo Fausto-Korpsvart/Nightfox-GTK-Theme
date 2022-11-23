@@ -143,7 +143,7 @@ stage {
 #notification StEntry:hover {
   color: #eae8ff;
   background-color: rgba(234, 232, 255, 0.04);
-  border: 2px solid #d94f76;
+  border: 2px solid #cdcbe0;
 }
 
 #menu-search-entry:insensitive,
@@ -184,7 +184,7 @@ StScrollView StScrollBar {
 }
 
 StScrollBar StBin#trough {
-  background-color: rgba(39, 37, 63, 0.2);
+  background-color: rgba(39, 37, 66, 0.1);
   border-radius: 9999px;
 }
 
@@ -329,11 +329,11 @@ StScrollBar StButton#hhandle:active {
 .popup-combo-menu {
   padding: 3px;
   color: #eae8ff;
-  background-color: rgba(39, 37, 63, 0.95);
+  background-color: rgba(39, 37, 66, 0.95);
   border-radius: 12px;
   margin: 6px;
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.35);
-  border: 2px solid #d94f76;
+  border: 2px solid #d84f76;
 }
 
 .menu-arrow,
@@ -763,7 +763,7 @@ StScrollBar StButton#hhandle:active {
 
 .about-uuid {
   font-size: 10px;
-  color: #888;
+  color: #6e6a86;
 }
 
 .about-icon {
@@ -774,7 +774,7 @@ StScrollBar StButton#hhandle:active {
 .about-scrollBox {
   border: 1px solid rgba(234, 232, 255, 0.12);
   border-radius: 6px;
-  background-color: #1a1826;
+  background-color: #1a182c;
   padding: 4px;
   padding-right: 0;
   border-radius: 0;
@@ -793,7 +793,7 @@ StScrollBar StButton#hhandle:active {
 .about-version {
   padding-left: 7px;
   font-size: 10px;
-  color: #888;
+  color: #6e6a86;
 }
 
 .calendar {
@@ -926,7 +926,7 @@ StScrollBar StButton#hhandle:active {
   margin-from-right-edge-of-screen: 18px;
   width: 28em;
   color: #eae8ff;
-  background-color: rgba(39, 37, 63, 0.95);
+  background-color: rgba(39, 37, 66, 0.8);
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.35);
   margin: 7px 12px 17px 12px;
 }
@@ -1016,7 +1016,7 @@ StScrollBar StButton#hhandle:active {
 
 .switcher-list {
   color: #eae8ff;
-  background-color: rgba(39, 37, 63, 0.95);
+  background-color: rgba(39, 37, 66, 0.95);
   border: none;
   border-radius: 6px;
   padding: 20px;
@@ -1175,7 +1175,7 @@ StScrollBar StButton#hhandle:active {
 .run-dialog-entry:focus {
   color: #eae8ff;
   background-color: rgba(234, 232, 255, 0.04);
-  border: 2px solid #d94f76;
+  border: 2px solid #d84f76;
 }
 
 .run-dialog .modal-dialog-button-box {
@@ -1723,7 +1723,7 @@ StScrollBar StButton#hhandle:active {
   padding: 12px;
   spacing: 6px;
   border: none;
-  background-color: #1a1826;
+  background-color: #1a182c;
   border-radius: 6px;
   color: #eae8ff;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.35), 0 3px 12px rgba(0, 0, 0, 0.16);
@@ -2030,7 +2030,7 @@ StScrollBar StButton#hhandle:active {
 }
 
 .workspace-button:hover {
-  color: #63577d;
+  color: #eae8ff;
 }
 
 /* Controls the style when using the "Visual representation" option */
@@ -2051,16 +2051,16 @@ StScrollBar StButton#hhandle:active {
 }
 
 .workspace-graph .workspace .windows {
-  -active-window-background: rgba(99, 87, 125, 0.75);
+  -active-window-background: rgba(71, 71, 71, 0.75);
   -active-window-border: rgba(0, 0, 0, 0.8);
-  -inactive-window-background: rgba(99, 87, 125, 0.75);
+  -inactive-window-background: rgba(71, 71, 71, 0.75);
   -inactive-window-border: rgba(0, 0, 0, 0.8);
 }
 
 .workspace-graph .workspace:active .windows {
-  -active-window-background: rgba(99, 87, 125, 0.95);
+  -active-window-background: rgba(84, 84, 84, 0.75);
   -active-window-border: rgba(0, 0, 0, 0.8);
-  -inactive-window-background: rgba(26, 24, 44, 0.85);
+  -inactive-window-background: rgba(46, 46, 46, 0.75);
   -inactive-window-border: rgba(0, 0, 0, 0.8);
 }
 
@@ -2225,8 +2225,8 @@ StScrollBar StButton#hhandle:active {
 }
 
 .desklet-drag-placeholder {
-  border: 2px solid #d94f76;
-  background-color: rgba(205, 203, 224, 0.3);
+  border: 2px solid #d84f76;
+  background-color: rgba(205, 203, 214, 0.3);
 }
 
 .photoframe-box {
@@ -2254,7 +2254,7 @@ StScrollBar StButton#hhandle:active {
 .tile-preview.snap,
 .tile-hud,
 .tile-hud.snap {
-  background-color: rgba(205, 203, 224, 0.3);
+  background-color: rgba(205, 203, 214, 0.3);
   border: 1px solid #cdcbe0;
 }
 
@@ -2264,4 +2264,3 @@ StScrollBar StButton#hhandle:active {
   background-color: rgba(0, 0, 0, 0);
   border-radius: 0px;
 }
-
