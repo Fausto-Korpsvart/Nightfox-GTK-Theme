@@ -13,7 +13,7 @@
 > With support also for the desktop environments Cinnamon and XFCE.<br />
 > You can check **Reddit:** [r/unixporn](https://www.reddit.com/r/unixporn/) to get some ideas.
 
-![Nightfox](https://raw.githubusercontent.com/Fausto-Korpsvart/Nightfox-GTK-Theme/main/screenshots/Nightfox-Dusk.png)
+![Nightfox](https://raw.githubusercontent.com/Fausto-Korpsvart/Nightfox-GTK-Theme/main/extra/screenshots/Nightfox-Dusk.png)
 
 ## Installing Themes
 
