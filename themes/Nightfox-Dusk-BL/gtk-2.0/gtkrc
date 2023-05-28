@@ -1,7 +1,7 @@
 # Oomox GTK Theme (Numix Fork)
 
 gtk-color-scheme =
-"base_color:#1a1b26\nbg_color:#1a1b26\ntooltip_bg_color:#1a1b26\nselected_bg_color:#82aaff\ntext_color:#a9b1d6\nfg_color:#c0caf5\ntooltip_fg_color:#c0caf5\nselected_fg_color:#1a1b26\nmenubar_bg_color:#1a1b26\nmenubar_fg_color:#c0caf5\ntoolbar_bg_color:#1a1b26\ntoolbar_fg_color:#c0caf5\nmenu_bg_color:#1a1b26\nmenu_fg_color:#c0caf5\npanel_bg_color:#1a1b26\npanel_fg_color:#c0caf5\nlink_color:#41b1e8\nbtn_bg_color:#414868\nbtn_fg_color:#a9b1d6\ntitlebar_bg_color:#1a1b26\ntitlebar_fg_color:#c0caf5\nprimary_caret_color:#a9b1d6\nsecondary_caret_color:#a9b1d6\naccent_bg_color:#82aaff\n"
+"base_color:#1a182c\nbg_color:#1a182c\ntooltip_bg_color:#1a182c\nselected_bg_color:#65b1cd\ntext_color:#eae8ff\nfg_color:#eae8ff\ntooltip_fg_color:#eae8ff\nselected_fg_color:#eae8ff\nmenubar_bg_color:#1a182c\nmenubar_fg_color:#eae8ff\ntoolbar_bg_color:#1a182c\ntoolbar_fg_color:#eae8ff\nmenu_bg_color:#1a182c\nmenu_fg_color:#eae8ff\npanel_bg_color:#1a182c\npanel_fg_color:#eae8ff\nlink_color:#076678\nbtn_bg_color:#eae8ff\nbtn_fg_color:#27253f\ntitlebar_bg_color:#1a182c\ntitlebar_fg_color:#eae8ff\nprimary_caret_color:#eae8ff\nsecondary_caret_color:#eae8ff\naccent_bg_color:#65b1cd\n"
 # Default Style
 
 style "murrine-default" {
@@ -150,7 +150,7 @@ style "murrine-default" {
 		menustyle = 0 # 0 = none, 1 = vertical striped
 		progressbarstyle = 0 # 0 = none, 1 = diagonal striped, 2 = vertical striped
 		reliefstyle = 0 # 0 = flat, 1 = inset, 2 = shadow, 3 = shadow with gradient, 4 = stronger shadow with gradient
-		roundness = 4 # roundness of widgets
+		roundness = 2 # roundness of widgets
 		scrollbarstyle = 0 # 0 = none, 1 = circles, 2 = handles, 3 = diagonal stripes, 4 = diagonal stripes and handles, 5 = horizontal stripes, 6 = horizontal stripes and handles
 		sliderstyle = 0 # 0 = none, 1 = handles
 		stepperstyle = 1 # 0 = standard, 1 = integrated stepper handles
@@ -202,7 +202,7 @@ style "murrine-button"  = "murrine-wider" {
 
 	engine "murrine" {
 		border_colors = { mix(0.25, @btn_fg_color, @btn_bg_color), mix(0.25, @btn_fg_color, @btn_bg_color) }
-		roundness = 4
+		roundness = 2
 		gradient_shades = { 1.0, 1.0, 1.0, 1.0 }
 	}
 }
@@ -254,7 +254,7 @@ style "murrine-scale" = "murrine-thin" {
 
 	engine "murrine" {
         roundness = 8
-		#roundness = 4
+		#roundness = 2
 		gradient_shades = { 1.08, 1.08, 1.08, 1.08 }
 		#border_shades = { 0.5, 0.5 }
 		border_colors = { mix(0.25, @btn_fg_color, @btn_bg_color), mix(0.25, @btn_fg_color, @btn_bg_color) }
@@ -271,7 +271,7 @@ style "murrine-progressbar" = "murrine-thin" {
 
 	engine "murrine" {
 		#roundness = 2
-		roundness = 4
+		roundness = 2
 		border_shades = { 1.2, 1.2 }
 		trough_border_shades = { 0.8, 0.8 }
 	}
@@ -356,7 +356,7 @@ style "murrine-entry" = "murrine-wider" {
 	engine "murrine" {
 		#border_shades = { 1.15, 1.15 }
         border_colors = { mix(0.22, @text_color, @base_color), mix(0.22, @text_color, @base_color) }
-		roundness = 4
+		roundness = 2
 	}
 }
 
