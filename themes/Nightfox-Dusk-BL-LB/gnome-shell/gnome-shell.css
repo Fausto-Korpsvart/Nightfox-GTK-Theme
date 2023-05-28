@@ -940,12 +940,12 @@ StWidget.focused .app-well-app-running-dot {
 
 .modal-dialog-linked-button:last-child {
   color: #eae8ff;
-  background-color: #393552;
+  background-color: #4b4673;
 }
 
 .modal-dialog-linked-button:hover:last-child {
+	background-color: #47407d;
   color: #eae8ff;
-  background-color: #4b4673;
 }
 
 .modal-dialog-linked-button:active:last-child {
