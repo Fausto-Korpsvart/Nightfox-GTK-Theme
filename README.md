@@ -153,8 +153,6 @@ Thanks to [@f1yn](https://github.com/f1yn) for the solution to the active and in
 
 Thanks to [@telometto](https://github.com/telometto) for the alternative for the application of themes in `Flatpak`.
 
-### Support
-
-[](https://paypal.me/FKorpsvart)
+[Support](https://paypal.me/FKorpsvart)
 
 ###### **<ENJOY IT!! :nerd_face:/>**
