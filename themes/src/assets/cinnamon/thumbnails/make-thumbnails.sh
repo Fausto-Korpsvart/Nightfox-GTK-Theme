@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 
 for theme in '' '-Purple' '-Pink' '-Red' '-Orange' '-Yellow' '-Green' '-Blue' '-Grey'; do
-    for type in '' '-Carbonfox' '-Nordfox'; do
+    for type in '' '-Nordfox' '-Carbonfox'; do
         case "$theme" in
             '')
                 theme_color_dark='#27a1b9'
@@ -41,7 +41,7 @@ for theme in '' '-Purple' '-Pink' '-Red' '-Orange' '-Yellow' '-Green' '-Blue' '-
                 ;;
         esac
 
-        if [[ "$type" == '-Carbonfox' ]]; then
+        if [[ "$type" == '-Nordfox' ]]; then
             panel_dark='#24283b'
             panel_light='#c0caf5'
 
@@ -85,7 +85,7 @@ for theme in '' '-Purple' '-Pink' '-Red' '-Orange' '-Yellow' '-Green' '-Blue' '-
             esac
         fi
 
-        if [[ "$type" == '-Nordfox' ]]; then
+        if [[ "$type" == '-Carbonfox' ]]; then
             panel_dark='#222436'
             panel_light='#c8d3f5'
 

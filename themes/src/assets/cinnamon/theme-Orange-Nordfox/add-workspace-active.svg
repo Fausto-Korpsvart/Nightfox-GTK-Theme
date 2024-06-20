@@ -49,9 +49,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="true"
-     inkscape:zoom="3.337544"
-     inkscape:cx="18.876156"
-     inkscape:cy="100.2234"
+     inkscape:zoom="2.36"
+     inkscape:cx="-0.84745763"
+     inkscape:cy="96.822034"
      inkscape:window-width="1920"
      inkscape:window-height="1043"
      inkscape:window-x="0"
@@ -85,7 +85,7 @@
      y="5"
      rx="8"
      ry="8"
-     style="fill:#fe640b;fill-opacity:1" />
+     style="fill:#955f61;fill-opacity:1" />
   <path
      d="m 18,95 c -0.554,0 -1,0.446 -1,1 v 4 h -4 c -0.554,0 -1,0.446 -1,1 0,0.554 0.446,1 1,1 h 4 v 4 c 0,0.554 0.446,1 1,1 0.554,0 1,-0.446 1,-1 v -4 h 4 c 0.554,0 1,-0.446 1,-1 0,-0.554 -0.446,-1 -1,-1 h -4 v -4 c 0,-0.554 -0.446,-1 -1,-1 z m 8,6 a 8,8 0 0 1 -8,8 8,8 0 0 1 -8,-8 8,8 0 0 1 8,-8 8,8 0 0 1 8,8 z"
      color="#000000"
