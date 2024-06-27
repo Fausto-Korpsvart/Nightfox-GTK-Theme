@@ -2,7 +2,7 @@
 
 for theme in '' '-Purple' '-Pink' '-Red' '-Orange' '-Yellow' '-Green' '-Blue' '-Grey'; do
     for color in '' '-Dark'; do
-        for type in '' '-Carbonfox' '-Nordfox'; do
+        for type in '' '-Carbon' '-Nord'; do
             if [[ "$color" == '' ]]; then
                 case "$theme" in
                     '')
@@ -34,7 +34,7 @@ for theme in '' '-Purple' '-Pink' '-Red' '-Orange' '-Yellow' '-Green' '-Blue' '-
                         ;;
                 esac
 
-                if [[ "$type" == '-Carbonfox' ]]; then
+                if [[ "$type" == '-Carbon' ]]; then
                     background_color='#c0caf5'
 
                     case "$theme" in
@@ -68,7 +68,7 @@ for theme in '' '-Purple' '-Pink' '-Red' '-Orange' '-Yellow' '-Green' '-Blue' '-
                     esac
                 fi
 
-                if [[ "$type" == '-Nordfox' ]]; then
+                if [[ "$type" == '-Nord' ]]; then
                     background_color='#c8d3f5'
 
                     case "$theme" in
@@ -132,7 +132,7 @@ for theme in '' '-Purple' '-Pink' '-Red' '-Orange' '-Yellow' '-Green' '-Blue' '-
                         ;;
                 esac
 
-                if [[ "$type" == '-Carbonfox' ]]; then
+                if [[ "$type" == '-Carbon' ]]; then
                     background_color='#24283b'
 
                     case "$theme" in
@@ -166,7 +166,7 @@ for theme in '' '-Purple' '-Pink' '-Red' '-Orange' '-Yellow' '-Green' '-Blue' '-
                     esac
                 fi
 
-                if [[ "$type" == '-Nordfox' ]]; then
+                if [[ "$type" == '-Nord' ]]; then
                     background_color='#222436'
 
                     case "$theme" in

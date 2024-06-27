@@ -154,7 +154,7 @@ $applet-primary:                        if($theme == 'grey' and variant == 'ligh
 
 $background:                            if($variant == 'light', background(a), background(f));
 $surface:                               if($variant == 'light', background(b), background(g));
-$base:                                  if($variant == 'light', background(c), background(h));
+$base:                                  if($variant == 'light', background(c), background(g));
 $base-alt:                              if($variant == 'light', background(d), background(h));
 $card:                                  if($variant == 'light', background(b), background(h));
 $menu:                                  if($variant == 'light', $grey-150, $grey-800);

@@ -66,11 +66,11 @@ OPTIONS:
   -u, --uninstall         Uninstall/Remove installed themes or links
 
   --tweaks                Specify versions for tweaks
-                          1. [nordfox|carbonfox]	Nordfox|Carbonfox| ColorSchemes version
-                          2. black      			Blackness color version
-                          3. float      			Floating gnome-shell panel style
-                          4. outline    			Windows with 2px outline style
-                          5. macos:					Macos style windows button
+                          1. [nord|carbon]	Nord|Carbon| ColorSchemes version
+                          2. black          Blackness color version
+                          3. float          Floating gnome-shell panel style
+                          4. outline        Windows with 2px outline style
+                          5. macos:		    Macos style windows button
 
   -h, --help              Show help
 EOF
@@ -320,16 +320,16 @@ while [[ $# -gt 0 ]]; do
 		shift
 		for variant in $@; do
 			case "$variant" in
-			carbonfox)
-				carbonfox="true"
-				ctype="-Carbonfox"
-				echo -e "Carbonfox ColorScheme version! ..."
+			carbon)
+				carbon="true"
+				ctype="-Carbon"
+				echo -e "Carbon ColorScheme version! ..."
 				shift
 				;;
-			nordfox)
-				nordfox="true"
-				ctype="-Nordfox"
-				echo -e "Nordfox ColorScheme version! ..."
+			nord)
+				nord="true"
+				ctype="-Nord"
+				echo -e "Nord ColorScheme version! ..."
 				shift
 				;;
 			black)
@@ -423,14 +423,14 @@ compact_size() {
 	sed -i "/\$compact:/s/false/true/" "${SRC_DIR}/sass/_tweaks-temp.scss"
 }
 
-carbonfox_color() {
-	sed -i "/\@import/s/color-palette-default/color-palette-carbonfox/" "${SRC_DIR}/sass/_tweaks-temp.scss"
-	sed -i "/\$colorscheme:/s/default/carbonfox/" "${SRC_DIR}/sass/_tweaks-temp.scss"
+carbon_color() {
+	sed -i "/\@import/s/color-palette-default/color-palette-carbon/" "${SRC_DIR}/sass/_tweaks-temp.scss"
+	sed -i "/\$colorscheme:/s/default/carbon/" "${SRC_DIR}/sass/_tweaks-temp.scss"
 }
 
-nordfox_color() {
-	sed -i "/\@import/s/color-palette-default/color-palette-nordfox/" "${SRC_DIR}/sass/_tweaks-temp.scss"
-	sed -i "/\$colorscheme:/s/default/nordfox/" "${SRC_DIR}/sass/_tweaks-temp.scss"
+nord_color() {
+	sed -i "/\@import/s/color-palette-default/color-palette-nord/" "${SRC_DIR}/sass/_tweaks-temp.scss"
+	sed -i "/\$colorscheme:/s/default/nord/" "${SRC_DIR}/sass/_tweaks-temp.scss"
 }
 
 blackness_color() {
@@ -501,12 +501,12 @@ theme_tweaks() {
 		compact_size
 	fi
 
-	if [[ "$carbonfox" = "true" ]]; then
-		carbonfox_color
+	if [[ "$carbon" = "true" ]]; then
+		carbon_color
 	fi
 
-	if [[ "$nordfox" = "true" ]]; then
-		nordfox_color
+	if [[ "$nord" = "true" ]]; then
+		nord_color
 	fi
 
 	if [[ "$blackness" = "true" ]]; then

@@ -9,7 +9,7 @@ INDEX="assets.txt"
 ./make-assets.sh
 
 for theme in '' '-Purple' '-Pink' '-Red' '-Orange' '-Yellow' '-Green' '-Blue' '-Grey'; do
-    for type in '' '-Carbonfox' '-Nordfox'; do
+    for type in '' '-Carbon' '-Nord'; do
 
         ASSETS_DIR="assets${theme}${type}"
         SRC_FILE="assets${theme}${type}.svg"
@@ -58,7 +58,7 @@ for theme in '' '-Purple' '-Pink' '-Red' '-Orange' '-Yellow' '-Green' '-Blue' '-
 done
 
 for theme in '' '-Purple' '-Pink' '-Red' '-Orange' '-Yellow' '-Green' '-Blue' '-Grey'; do
-    for type in '' '-Carbonfox' '-Nordfox'; do
+    for type in '' '-Carbon' '-Nord'; do
         if [[ "${theme}" == '' && "${type}" == '' ]]; then
             echo "keep assets.svg file..."
         else
