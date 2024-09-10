@@ -14,10 +14,10 @@
 > A GTK theme based on the colours of [EdenEast's](https://github.com/EdenEast) great theme: [Nightfox for Neovim](https://github.com/EdenEast/nightfox.nvim),
 > the [VinceLiuice's](https://github.com/vinceliuice) awesome: [Magnetic GTK theme](https://github.com/vinceliuice/Magnetic-gtk-theme) and the creativity of [Gusbemacbe's](https://github.com/gusbemacbe): [Suru Plus Icon Theme](https://github.com/gusbemacbe/suru-plus).<br>
 > Great to combine in your Gnome Desktop Environment and TWMs like: XmonadWM, AwesomeWM, BSPWM, etc...
->
+> 
 > The theme is more focused on the Gnome Desktop, but supports Cinnamon, XFCE, Mate, etc. with generic styles.
 > It's great to combine in your TWMs like: XmonadWM, AwesomeWM, BSPWM, etc...
->
+> 
 > You can check **Reddit:** [r/unixporn](https://www.reddit.com/r/unixporn/) to get some ideas.
 
 ![Nightfox](https://raw.githubusercontent.com/Fausto-Korpsvart/Nightfox-GTK-Theme/main/extra/screenshots/Nightfox-Dusk.png)
@@ -147,23 +147,23 @@ This is just to clarify doubts about the abbreviations of the Themes, as many fo
 
 ## More Themes with Neovim colour schemes?
 
-| Neovim Colorschemes for GTK   | GitHub                                                              | Pling                                       |
-| ----------------------------- | ------------------------------------------------------------------- | ------------------------------------------- |
-| Catppuccin GTK Theme          | [Source](https://github.com/Fausto-Korpsvart/Catppuccin-GTK-Theme)  | [Package](https://www.pling.com/p/1715554/) |
-| Everforest GTK Theme          | [Source](https://github.com/Fausto-Korpsvart/Everforest-GTK-Theme)  | [Package](https://www.pling.com/p/1695467/) |
-| Gruvbox GTK Theme             | [Source](https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme)     | [Package](https://www.pling.com/p/1681313/) |
-| Kanagawa GTK Theme            | [Source](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme)    | [Package](https://www.pling.com/p/1810560/) |
-| Material GTK Theme            | [Source](https://github.com/Fausto-Korpsvart/Material-GTK-Themes)   | [Package](https://www.pling.com/p/1706139/) |
-| Nightfox GTK Theme            | [Source](https://github.com/Fausto-Korpsvart/Nightfox-GTK-Theme)    | [Package](https://www.pling.com/p/1929101/) |
-| Rose Pine GTK Theme           | [Source](https://github.com/Fausto-Korpsvart/Rose-Pine-GTK-Theme)   | [Package](https://www.pling.com/p/1810530/) |
-| Tokyonight GTK Theme          | [Source](https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme)  | [Package](https://www.pling.com/p/1681315/) |
+| Neovim Colorschemes for GTK | GitHub                                                             | Pling                                       |
+| --------------------------- | ------------------------------------------------------------------ | ------------------------------------------- |
+| Catppuccin GTK Theme        | [Source](https://github.com/Fausto-Korpsvart/Catppuccin-GTK-Theme) | [Package](https://www.pling.com/p/1715554/) |
+| Everforest GTK Theme        | [Source](https://github.com/Fausto-Korpsvart/Everforest-GTK-Theme) | [Package](https://www.pling.com/p/1695467/) |
+| Gruvbox GTK Theme           | [Source](https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme)    | [Package](https://www.pling.com/p/1681313/) |
+| Kanagawa GTK Theme          | [Source](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme)   | [Package](https://www.pling.com/p/1810560/) |
+| Material GTK Theme          | [Source](https://github.com/Fausto-Korpsvart/Material-GTK-Themes)  | [Package](https://www.pling.com/p/1706139/) |
+| Nightfox GTK Theme          | [Source](https://github.com/Fausto-Korpsvart/Nightfox-GTK-Theme)   | [Package](https://www.pling.com/p/1929101/) |
+| Rose Pine GTK Theme         | [Source](https://github.com/Fausto-Korpsvart/Rose-Pine-GTK-Theme)  | [Package](https://www.pling.com/p/1810530/) |
+| Tokyonight GTK Theme        | [Source](https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme) | [Package](https://www.pling.com/p/1681315/) |
 
 #### Acknowledgements to
 
 Thanks to [@telometto](https://github.com/telometto) for the alternative to the application of themes in `Flatpak.`<br>
 Thanks to [@f1yn](https://github.com/f1yn) for the solution to the active and inactive borders in the new version of `Cinnamon.`<br>
 Thanks to [@eeeXun](https://github.com/eeeXun) for the hint to solve the bug in `Mate Desktop` window control buttons.<br>
-Thanks to [@Icy-Thought](https://github.com/Icy-Thought),[@D3vil0p3r](https://github.com/D3vil0p3r) and others who have packaged these themes for NIX & AUR.
+Thanks to [@Icy-Thought](https://github.com/Icy-Thought),[@D3vil0p3r](https://github.com/D3vil0p3r) and to those who have packaged these themes for NIX and AUR.
 
 #### Support
 
