@@ -9,33 +9,34 @@ avatar {
 	// need to update the NUMBER_OF_COLORS in src/adw-avatar.c.
 	// The 2D list has this form: ((font-color, gradient-top-color, gradient-bottom-color)).
 	$avatarcolorlist: (
-		(#cfe1f5, #83b6ec, #337fdc),
 		// blue
-		(#caeaf2, #7ad9f1, #0f9ac8),
+		(#cfe1f5, #83b6ec, #337fdc),
 		// cyan
-		(#cef8d8, #8de6b1, #29ae74),
+		(#caeaf2, #7ad9f1, #0f9ac8),
 		// green
-		(#e6f9d7, #b5e98a, #6ab85b),
+		(#cef8d8, #8de6b1, #29ae74),
 		// lime
-		(#f9f4e1, #f8e359, #d29d09),
+		(#e6f9d7, #b5e98a, #6ab85b),
 		// yellow
-		(#ffead1, #ffcb62, #d68400),
+		(#f9f4e1, #f8e359, #d29d09),
 		// gold
-		(#ffe5c5, #ffa95a, #ed5b00),
+		(#ffead1, #ffcb62, #d68400),
 		// orange
-		(#f8d2ce, #f78773, #e62d42),
+		(#ffe5c5, #ffa95a, #ed5b00),
 		// raspberry
-		(#fac7de, #e973ab, #e33b6a),
+		(#f8d2ce, #f78773, #e62d42),
 		// magenta
-		(#e7c2e8, #cb78d4, #9945b5),
+		(#fac7de, #e973ab, #e33b6a),
 		// purple
-		(#d5d2f5, #9e91e8, #7a59ca),
+		(#e7c2e8, #cb78d4, #9945b5),
 		// violet
-		(#f2eade, #e3cf9c, #b08952),
+		(#d5d2f5, #9e91e8, #7a59ca),
 		// beige
-		(#e5d6ca, #be916d, #785336),
+		(#f2eade, #e3cf9c, #b08952),
 		// brown
-		(#d8d7d3, #c0bfbc, #6e6d71) // gray
+		(#e5d6ca, #be916d, #785336),
+		// gray
+		(#d8d7d3, #c0bfbc, #6e6d71)
 	);
 
 	@for $i from 1 through length($avatarcolorlist) {
@@ -317,6 +318,75 @@ preferencesgroup > box {
 	.cutout-button {
 		background-color: $base-alt;
 	}
+
+	button.accent-button {
+		min-height: 24px;
+		min-width: 24px;
+		padding: $space-size / 2;
+		border-radius: $modal-radius;
+		background: var(--accent-bg-color);
+		outline: none;
+		background-clip: content-box;
+		box-shadow: none;
+
+		&:hover {
+			box-shadow: 0 0 0 3px $overlay-hover;
+		}
+
+		&:checked {
+			box-shadow: 0 0 0 3px $primary;
+		}
+
+		&.blue,
+		&.teal,
+		&.green,
+		&.yellow,
+		&.orange,
+		&.red,
+		&.pink,
+		&.purple,
+		&.slate {
+			--accent-color: oklab(
+				from var(--accent-bg-color) var(--standalone-color-oklab)
+			);
+		}
+
+		&.blue {
+			--accent-bg-color: var(--accent-blue);
+		}
+
+		&.teal {
+			--accent-bg-color: var(--accent-teal);
+		}
+
+		&.green {
+			--accent-bg-color: var(--accent-green);
+		}
+
+		&.yellow {
+			--accent-bg-color: var(--accent-yellow);
+		}
+
+		&.orange {
+			--accent-bg-color: var(--accent-orange);
+		}
+
+		&.red {
+			--accent-bg-color: var(--accent-red);
+		}
+
+		&.pink {
+			--accent-bg-color: var(--accent-pink);
+		}
+
+		&.purple {
+			--accent-bg-color: var(--accent-purple);
+		}
+
+		&.slate {
+			--accent-bg-color: var(--accent-slate);
+		}
+	}
 }
 
 // AdwAboutWindow
@@ -455,7 +525,8 @@ overlay-split-view {
 	color: $titlebar-text-secondary;
 
 	> separator {
-		background-color: transparent;
+		background-color: $divider;
+		margin: 10px 15px;
 	}
 
 	> row {
@@ -659,7 +730,8 @@ overlay-split-view {
 	}
 
 	.sidebar,
-	toolbarview {
+	toolbarview,
+	navigation-view-page stack {
 		> scrolledwindow {
 			@extend %sidebar_style;
 
