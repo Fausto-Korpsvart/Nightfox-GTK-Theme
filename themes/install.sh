@@ -29,7 +29,9 @@ SIZE_VARIANTS=('' '-Compact')
 if [[ "$(command -v gnome-shell)" ]]; then
 	gnome-shell --version
 	SHELL_VERSION="$(gnome-shell --version | cut -d ' ' -f 3 | cut -d . -f -1)"
-	if [[ "${SHELL_VERSION:-}" -ge "47" ]]; then
+	if [[ "${SHELL_VERSION:-}" -ge "48" ]]; then
+		GS_VERSION="48-0"
+	elif [[ "${SHELL_VERSION:-}" -ge "47" ]]; then
 		GS_VERSION="47-0"
 	elif [[ "${SHELL_VERSION:-}" -ge "46" ]]; then
 		GS_VERSION="46-0"
@@ -44,7 +46,7 @@ if [[ "$(command -v gnome-shell)" ]]; then
 	fi
 else
 	echo "'gnome-shell' not found, using styles for last gnome-shell version available."
-	GS_VERSION="47-0"
+	GS_VERSION="48-0"
 fi
 
 usage() {
@@ -100,27 +102,27 @@ install() {
 	mkdir -p "${THEME_DIR}"
 
 	# Index Theme File
-	echo "Type=X-GNOME-Metatheme" >>                            						 "${THEME_DIR}/index.theme"
-	echo "[Desktop Entry]" >>                                   						 "${THEME_DIR}/index.theme"
-	echo "Name=${2}${3}${4}${5}${6}" >>                         						 "${THEME_DIR}/index.theme"
-	echo "Comment=An Flat Gtk+ theme based on Elegant Design" >>						 "${THEME_DIR}/index.theme"
-	echo "Encoding=UTF-8" >>                                    						 "${THEME_DIR}/index.theme"
-	echo "" >>                                                  						 "${THEME_DIR}/index.theme"
-	echo "[X-GNOME-Metatheme]" >>                               						 "${THEME_DIR}/index.theme"
-	echo "GtkTheme=${2}${3}${4}${5}${6}" >>                     						 "${THEME_DIR}/index.theme"
-	echo "MetacityTheme=${2}${3}${4}${5}${6}" >>                						 "${THEME_DIR}/index.theme"
-	echo "IconTheme=Tela-circle${ELSE_DARK:-}" >>               						 "${THEME_DIR}/index.theme"
-	echo "CursorTheme=${2}-cursors" >>                          						 "${THEME_DIR}/index.theme"
-	echo "ButtonLayout=close,minimize,maximize:menu" >>         						 "${THEME_DIR}/index.theme"
+	echo "Type=X-GNOME-Metatheme" >>"${THEME_DIR}/index.theme"
+	echo "[Desktop Entry]" >>"${THEME_DIR}/index.theme"
+	echo "Name=${2}${3}${4}${5}${6}" >>"${THEME_DIR}/index.theme"
+	echo "Comment=An Flat Gtk+ theme based on Elegant Design" >>"${THEME_DIR}/index.theme"
+	echo "Encoding=UTF-8" >>"${THEME_DIR}/index.theme"
+	echo "" >>"${THEME_DIR}/index.theme"
+	echo "[X-GNOME-Metatheme]" >>"${THEME_DIR}/index.theme"
+	echo "GtkTheme=${2}${3}${4}${5}${6}" >>"${THEME_DIR}/index.theme"
+	echo "MetacityTheme=${2}${3}${4}${5}${6}" >>"${THEME_DIR}/index.theme"
+	echo "IconTheme=Tela-circle${ELSE_DARK:-}" >>"${THEME_DIR}/index.theme"
+	echo "CursorTheme=${2}-cursors" >>"${THEME_DIR}/index.theme"
+	echo "ButtonLayout=close,minimize,maximize:menu" >>"${THEME_DIR}/index.theme"
 
 	# Gnome Shell Themes
-	mkdir -p                                                                			 "${THEME_DIR}/gnome-shell"
-	cp -r "${SRC_DIR}/main/gnome-shell/pad-osd.css"                         			 "${THEME_DIR}/gnome-shell"
-	sassc $SASSC_OPT "${SRC_DIR}/main/gnome-shell/gnome-shell${color}.scss" 			 "${THEME_DIR}/gnome-shell/gnome-shell.css"
+	mkdir -p "${THEME_DIR}/gnome-shell"
+	cp -r "${SRC_DIR}/main/gnome-shell/pad-osd.css" "${THEME_DIR}/gnome-shell"
+	sassc $SASSC_OPT "${SRC_DIR}/main/gnome-shell/gnome-shell${color}.scss" "${THEME_DIR}/gnome-shell/gnome-shell.css"
 
-	cp -r "${SRC_DIR}/assets/gnome-shell/common-assets"               					 "${THEME_DIR}/gnome-shell/assets"
-	cp -r "${SRC_DIR}/assets/gnome-shell/assets${ELSE_DARK:-}/"*.svg  					 "${THEME_DIR}/gnome-shell/assets"
-	cp -r "${SRC_DIR}/assets/gnome-shell/theme${theme}${ctype}/"*.svg 					 "${THEME_DIR}/gnome-shell/assets"
+	cp -r "${SRC_DIR}/assets/gnome-shell/common-assets" "${THEME_DIR}/gnome-shell/assets"
+	cp -r "${SRC_DIR}/assets/gnome-shell/assets${ELSE_DARK:-}/"*.svg "${THEME_DIR}/gnome-shell/assets"
+	cp -r "${SRC_DIR}/assets/gnome-shell/theme${theme}${ctype}/"*.svg "${THEME_DIR}/gnome-shell/assets"
 
 	cd "${THEME_DIR}/gnome-shell"
 	ln -s assets/no-events.svg no-events.svg
@@ -128,61 +130,61 @@ install() {
 	ln -s assets/no-notifications.svg no-notifications.svg
 
 	# GTK2 Themes
-	mkdir -p                                                                      		 "${THEME_DIR}/gtk-2.0"
+	mkdir -p "${THEME_DIR}/gtk-2.0"
 	# cp -r "${SRC_DIR}/main/gtk-2.0/gtkrc${theme}${ELSE_DARK:-}${ctype}" 				 "${THEME_DIR}/gtk-2.0/gtkrc"
-	cp -r "${SRC_DIR}/main/gtk-2.0/common/"*'.rc'                                 		 "${THEME_DIR}/gtk-2.0"
-	cp -r "${SRC_DIR}/assets/gtk-2.0/assets-common${ELSE_DARK:-}"                 		 "${THEME_DIR}/gtk-2.0/assets"
-	cp -r "${SRC_DIR}/assets/gtk-2.0/assets${theme}${ELSE_DARK:-}${ctype}/"*"png" 		 "${THEME_DIR}/gtk-2.0/assets"
+	cp -r "${SRC_DIR}/main/gtk-2.0/common/"*'.rc' "${THEME_DIR}/gtk-2.0"
+	cp -r "${SRC_DIR}/assets/gtk-2.0/assets-common${ELSE_DARK:-}" "${THEME_DIR}/gtk-2.0/assets"
+	cp -r "${SRC_DIR}/assets/gtk-2.0/assets${theme}${ELSE_DARK:-}${ctype}/"*"png" "${THEME_DIR}/gtk-2.0/assets"
 
 	# GTK3 Themes
-	mkdir -p                                                                             "${THEME_DIR}/gtk-3.0"
-    cp -r "${SRC_DIR}/assets/gtk/assets${theme}${ctype}"                                 "${THEME_DIR}/gtk-3.0/assets"
-	cp -r "${SRC_DIR}/assets/gtk/scalable"                                               "${THEME_DIR}/gtk-3.0/assets"
+	mkdir -p "${THEME_DIR}/gtk-3.0"
+	cp -r "${SRC_DIR}/assets/gtk/assets${theme}${ctype}" "${THEME_DIR}/gtk-3.0/assets"
+	cp -r "${SRC_DIR}/assets/gtk/scalable" "${THEME_DIR}/gtk-3.0/assets"
 	cp -r "${SRC_DIR}/assets/gtk/thumbnails/thumbnail${theme}${ctype}${ELSE_DARK:-}.png" "${THEME_DIR}/gtk-3.0/thumbnail.png"
-	sassc $SASSC_OPT "${SRC_DIR}/main/gtk-3.0/gtk${color}.scss"                          "${THEME_DIR}/gtk-3.0/gtk.css"
-	sassc $SASSC_OPT "${SRC_DIR}/main/gtk-3.0/gtk-Dark.scss"                             "${THEME_DIR}/gtk-3.0/gtk-dark.css"
+	sassc $SASSC_OPT "${SRC_DIR}/main/gtk-3.0/gtk${color}.scss" "${THEME_DIR}/gtk-3.0/gtk.css"
+	sassc $SASSC_OPT "${SRC_DIR}/main/gtk-3.0/gtk-Dark.scss" "${THEME_DIR}/gtk-3.0/gtk-dark.css"
 
 	# GTK4 Themes
-	mkdir -p                                                                             "${THEME_DIR}/gtk-4.0"
-	cp -r "${SRC_DIR}/assets/gtk/scalable"                                               "${THEME_DIR}/gtk-4.0/assets"
+	mkdir -p "${THEME_DIR}/gtk-4.0"
+	cp -r "${SRC_DIR}/assets/gtk/scalable" "${THEME_DIR}/gtk-4.0/assets"
 	cp -r "${SRC_DIR}/assets/gtk/thumbnails/thumbnail${theme}${ctype}${ELSE_DARK:-}.png" "${THEME_DIR}/gtk-4.0/thumbnail.png"
-	sassc $SASSC_OPT "${SRC_DIR}/main/gtk-4.0/gtk${color}.scss"                          "${THEME_DIR}/gtk-4.0/gtk.css"
-	sassc $SASSC_OPT "${SRC_DIR}/main/gtk-4.0/gtk-Dark.scss"                             "${THEME_DIR}/gtk-4.0/gtk-dark.css"
+	sassc $SASSC_OPT "${SRC_DIR}/main/gtk-4.0/gtk${color}.scss" "${THEME_DIR}/gtk-4.0/gtk.css"
+	sassc $SASSC_OPT "${SRC_DIR}/main/gtk-4.0/gtk-Dark.scss" "${THEME_DIR}/gtk-4.0/gtk-dark.css"
 
 	# Cinnamon Themes
-	mkdir -p                                                                             "${THEME_DIR}/cinnamon"
-	cp -r "${SRC_DIR}/assets/cinnamon/common-assets"                                     "${THEME_DIR}/cinnamon/assets"
-	cp -r "${SRC_DIR}/assets/cinnamon/assets${ELSE_DARK:-}/"*'.svg'                      "${THEME_DIR}/cinnamon/assets"
-	cp -r "${SRC_DIR}/assets/cinnamon/theme${theme}${ctype}/"*'.svg'                     "${THEME_DIR}/cinnamon/assets"
-	sassc $SASSC_OPT "${SRC_DIR}/main/cinnamon/cinnamon${color}.scss"                    "${THEME_DIR}/cinnamon/cinnamon.css"
-	cp -r "${SRC_DIR}/assets/cinnamon/thumbnails/thumbnail${theme}${ctype}${color}.png"  "${THEME_DIR}/cinnamon/thumbnail.png"
+	mkdir -p "${THEME_DIR}/cinnamon"
+	cp -r "${SRC_DIR}/assets/cinnamon/common-assets" "${THEME_DIR}/cinnamon/assets"
+	cp -r "${SRC_DIR}/assets/cinnamon/assets${ELSE_DARK:-}/"*'.svg' "${THEME_DIR}/cinnamon/assets"
+	cp -r "${SRC_DIR}/assets/cinnamon/theme${theme}${ctype}/"*'.svg' "${THEME_DIR}/cinnamon/assets"
+	sassc $SASSC_OPT "${SRC_DIR}/main/cinnamon/cinnamon${color}.scss" "${THEME_DIR}/cinnamon/cinnamon.css"
+	cp -r "${SRC_DIR}/assets/cinnamon/thumbnails/thumbnail${theme}${ctype}${color}.png" "${THEME_DIR}/cinnamon/thumbnail.png"
 
 	# Metacity Themes
-	mkdir -p                                                         					 "${THEME_DIR}/metacity-1"
-	cp -r "${SRC_DIR}/main/metacity-1/metacity-theme-3${window}${color}.xml"             "${THEME_DIR}/metacity-1/metacity-theme-3.xml"
-	cp -r "${SRC_DIR}/assets/metacity-1/assets${window}"                                 "${THEME_DIR}/metacity-1/assets"
-	cp -r "${SRC_DIR}/assets/metacity-1/thumbnail${ELSE_DARK:-}.png"                     "${THEME_DIR}/metacity-1/thumbnail.png"
+	mkdir -p "${THEME_DIR}/metacity-1"
+	cp -r "${SRC_DIR}/main/metacity-1/metacity-theme-3${window}${color}.xml" "${THEME_DIR}/metacity-1/metacity-theme-3.xml"
+	cp -r "${SRC_DIR}/assets/metacity-1/assets${window}" "${THEME_DIR}/metacity-1/assets"
+	cp -r "${SRC_DIR}/assets/metacity-1/thumbnail${ELSE_DARK:-}.png" "${THEME_DIR}/metacity-1/thumbnail.png"
 	cd "${THEME_DIR}/metacity-1" && ln -s metacity-theme-3.xml metacity-theme-1.xml && ln -s metacity-theme-3.xml metacity-theme-2.xml
 
 	# XFWM4 Themes
-	mkdir -p                                                                             "${THEME_DIR}/xfwm4"
-	cp -r "${SRC_DIR}/assets/xfwm4/assets${ELSE_LIGHT:-}${ctype}${window}/"*.png         "${THEME_DIR}/xfwm4"
-	cp -r "${SRC_DIR}/main/xfwm4/themerc${ELSE_LIGHT:-}"                                 "${THEME_DIR}/xfwm4/themerc"
-	mkdir -p                                                                             "${THEME_DIR}-hdpi/xfwm4"
-	cp -r "${SRC_DIR}/assets/xfwm4/assets${ELSE_LIGHT:-}${ctype}${window}-hdpi/"*.png    "${THEME_DIR}-hdpi/xfwm4"
-	cp -r "${SRC_DIR}/main/xfwm4/themerc${ELSE_LIGHT:-}"                                 "${THEME_DIR}-hdpi/xfwm4/themerc"
-	sed -i "s/button_offset=6/button_offset=9/"                                          "${THEME_DIR}-hdpi/xfwm4/themerc"
-	mkdir -p                                                                             "${THEME_DIR}-xhdpi/xfwm4"
-	cp -r "${SRC_DIR}/assets/xfwm4/assets${ELSE_LIGHT:-}${ctype}${window}-xhdpi/"*.png   "${THEME_DIR}-xhdpi/xfwm4"
-	cp -r "${SRC_DIR}/main/xfwm4/themerc${ELSE_LIGHT:-}"                                 "${THEME_DIR}-xhdpi/xfwm4/themerc"
-	sed -i "s/button_offset=6/button_offset=12/"                                         "${THEME_DIR}-xhdpi/xfwm4/themerc"
+	mkdir -p "${THEME_DIR}/xfwm4"
+	cp -r "${SRC_DIR}/assets/xfwm4/assets${ELSE_LIGHT:-}${ctype}${window}/"*.png "${THEME_DIR}/xfwm4"
+	cp -r "${SRC_DIR}/main/xfwm4/themerc${ELSE_LIGHT:-}" "${THEME_DIR}/xfwm4/themerc"
+	mkdir -p "${THEME_DIR}-hdpi/xfwm4"
+	cp -r "${SRC_DIR}/assets/xfwm4/assets${ELSE_LIGHT:-}${ctype}${window}-hdpi/"*.png "${THEME_DIR}-hdpi/xfwm4"
+	cp -r "${SRC_DIR}/main/xfwm4/themerc${ELSE_LIGHT:-}" "${THEME_DIR}-hdpi/xfwm4/themerc"
+	sed -i "s/button_offset=6/button_offset=9/" "${THEME_DIR}-hdpi/xfwm4/themerc"
+	mkdir -p "${THEME_DIR}-xhdpi/xfwm4"
+	cp -r "${SRC_DIR}/assets/xfwm4/assets${ELSE_LIGHT:-}${ctype}${window}-xhdpi/"*.png "${THEME_DIR}-xhdpi/xfwm4"
+	cp -r "${SRC_DIR}/main/xfwm4/themerc${ELSE_LIGHT:-}" "${THEME_DIR}-xhdpi/xfwm4/themerc"
+	sed -i "s/button_offset=6/button_offset=12/" "${THEME_DIR}-xhdpi/xfwm4/themerc"
 
 	# Plank Themes
-	mkdir -p                                                							 "${THEME_DIR}/plank"
+	mkdir -p "${THEME_DIR}/plank"
 	if [[ "$color" == '-Light' ]]; then
-		cp -r "${SRC_DIR}/main/plank/theme-Light${ctype}/"* 							 "${THEME_DIR}/plank"
+		cp -r "${SRC_DIR}/main/plank/theme-Light${ctype}/"* "${THEME_DIR}/plank"
 	else
-		cp -r "${SRC_DIR}/main/plank/theme-Dark${ctype}/"*  							 "${THEME_DIR}/plank"
+		cp -r "${SRC_DIR}/main/plank/theme-Dark${ctype}/"* "${THEME_DIR}/plank"
 	fi
 }
 
