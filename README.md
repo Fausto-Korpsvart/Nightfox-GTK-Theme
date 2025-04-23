@@ -1,7 +1,7 @@
 <h1 align="center">Nightfox GTK Theme</h1>
 
 <p align="center">
-  <img alt"Linux Logo" = src="https://img.shields.io/badge/OS-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=yelow"/>
+  <img alt"Linux Logo" src="https://img.shields.io/badge/OS-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=yelow"/>
   <img alt"CSS Logo" src="https://img.shields.io/badge/Style-CSS-blue?style=for-the-badge&logo=css3&logoColor=blue"/>
   <img alt"GitHub Stars" src="https://img.shields.io/github/stars/Fausto-Korpsvart/Nightfox-GTK-Theme?&style=for-the-badge&logoColor=red" />
   <img alt"GitHub Forks" src="https://img.shields.io/github/forks/Fausto-Korpsvart/Nightfox-GTK-Theme?style=for-the-badge" />
@@ -9,11 +9,9 @@
   <img alt"GNU License" src='https://img.shields.io/github/license/Fausto-Korpsvart/Nightfox-GTK-Theme?style=for-the-badge&logo=GNU&label=License&color=bd0000&logoColor=white'/>
 </p>
 
-> [!NOTE]
-> Description
 > A GTK theme based on the colours of [EdenEast's](https://github.com/EdenEast) great theme: [Nightfox for Neovim](https://github.com/EdenEast/nightfox.nvim),
-> the [VinceLiuice's](https://github.com/vinceliuice) awesome: [Magnetic GTK theme](https://github.com/vinceliuice/Magnetic-gtk-theme) and the creativity of [Gusbemacbe's](https://github.com/gusbemacbe): [Suru Plus Icon Theme](https://github.com/gusbemacbe/suru-plus).<br>
-> Great to combine in your Gnome Desktop Environment and TWMs like: XmonadWM, AwesomeWM, BSPWM, etc...
+> the [VinceLiuice's](https://github.com/vinceliuice) awesome: [Magnetic GTK theme](https://github.com/vinceliuice/Magnetic-gtk-theme),
+> and the creativity of [Gusbemacbe's](https://github.com/gusbemacbe): [Suru Plus Icon Theme](https://github.com/gusbemacbe/suru-plus).<br>
 >
 > The theme is more focused on the Gnome Desktop, but supports Cinnamon, XFCE, Mate, etc. with generic styles.
 > It's great to combine in your TWMs like: XmonadWM, AwesomeWM, BSPWM, etc...
