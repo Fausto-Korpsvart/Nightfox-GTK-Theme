@@ -103,7 +103,7 @@ Run the following command in the terminal for a general installation
 > The `./install.sh` allows some specific options like:
 
 ```sh
-./install.sh --tweaks carbon macos outline float -t green -l
+./install.sh --tweaks nightfox macos outline float -t orange -l
 ```
 
 > To customise the name of the theme, you can use the `-n` parameter, e.g.
@@ -122,7 +122,7 @@ Run the following command in the terminal for a general installation
 
 -n, --name NAME         Specify theme name (Default: Nightfox)
 
--t, --theme VARIANT...  Specify theme accent color variant(s) [default|purple|pink|red|orange|yellow|green|teal|grey|all] (Default: blue)
+-t, --theme VARIANT...  Specify theme accent color variant(s) [default|green|grey|orange|pink|purple|red|teal|yellow|all] (Default: blue)
 
 -c, --color VARIANT...  Specify color variant(s) [light|dark] (Default: All variants)
 
@@ -135,11 +135,11 @@ Run the following command in the terminal for a general installation
 -u, --uninstall         Uninstall/Remove installed themes or links
 
 --tweaks                Specify versions for tweaks
-                        1. [carbon|nord]  Carbon|Nord ColorSchemes version
-                        2. black          Blackness color version
-                        3. float          Floating gnome-shell panel style
-                        4. outline        Windows with 2px outline style
-                        5. macos          macOS style windows button
+                        1. [carbonfox|nightfox|nordfox|terafox] Carbonfox|Nightfox|Nordfox|Terafox ColorSchemes version
+                        2. black     Blackness color version
+                        3. float     Floating gnome-shell panel style
+                        4. outline   Windows with 2px outline style
+                        5. macos     macOS style windows button
 
 -h, --help              Show help
 ```
@@ -179,4 +179,4 @@ Thanks to [@Icy-Thought](https://github.com/Icy-Thought),[@D3vil0p3r](https://gi
 
 ## Support
 
-[![PayPal Support](https://img.shields.io/badge/Donate-PayPal-00457C?style=for-the-badge&logo=paypalColor=white)](https://www.paypal.com/donate/?hosted_button_id=LKVTXNA36FTV4)
+<!-- [![PayPal Support](https://img.shields.io/badge/Donate-PayPal-00457C?style=for-the-badge&logo=paypalColor=white)](https://www.paypal.com/donate/?hosted_button_id=LKVTXNA36FTV4) -->

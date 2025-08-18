@@ -11,6 +11,7 @@ ROOT_UID=0
 DEST_DIR=
 
 ctype=
+window=
 
 # Destination directory
 if [ "$UID" -eq "$ROOT_UID" ]; then
@@ -22,7 +23,7 @@ fi
 SASSC_OPT="-M -t expanded"
 
 THEME_NAME=Nightfox
-THEME_VARIANTS=('' '-Purple' '-Pink' '-Red' '-Orange' '-Yellow' '-Green' '-Teal' '-Grey')
+THEME_VARIANTS=('' '-Green' '-Grey' '-Orange' '-Pink' '-Purple' '-Red' '-Teal' '-Yellow')
 COLOR_VARIANTS=('-Light' '-Dark')
 SIZE_VARIANTS=('' '-Compact')
 
@@ -58,7 +59,7 @@ OPTIONS:
 
   -n, --name NAME         Specify theme name (Default: $THEME_NAME)
 
-  -t, --theme VARIANT     Specify theme color variant(s) [default|purple|pink|red|orange|yellow|green|teal|grey|all] (Default: blue)
+  -t, --theme VARIANT     Specify theme color variant(s) [default|green|grey|orange|pink|purple|red|teal|yellow|all] (Default: blue)
 
   -c, --color VARIANT     Specify color variant(s) [light|dark] (Default: All variants))
 
@@ -70,11 +71,11 @@ OPTIONS:
   -u, --uninstall         Uninstall/Remove installed themes or links
 
   --tweaks                Specify versions for tweaks
-                          1. [nord|carbon]	Nord|Carbon| ColorSchemes version
+                          1. [carbonfox|nightfox|nordfox|terafox] Carbonfox|Nightfox|Nordfox|Terafox ColorSchemes version
                           2. black          Blackness color version
                           3. float          Floating gnome-shell panel style
                           4. outline        Windows with 2px outline style
-                          5. macos      	macOS style windows button
+                          5. macos:		    Macos style windows button
 
   -h, --help              Show help
 EOF
@@ -87,6 +88,7 @@ install() {
 	local color="${4}"
 	local size="${5}"
 	local ctype="${6}"
+  	local window="${7}"
 
 	[[ "${color}" == '-Light' ]] && local ELSE_LIGHT="${color}"
 	[[ "${color}" == '-Dark' ]] && local ELSE_DARK="${color}"
@@ -249,27 +251,27 @@ while [[ $# -gt 0 ]]; do
 				themes+=("${THEME_VARIANTS[0]}")
 				shift
 				;;
-			purple)
+			green)
 				themes+=("${THEME_VARIANTS[1]}")
 				shift
 				;;
-			pink)
+			grey)
 				themes+=("${THEME_VARIANTS[2]}")
 				shift
 				;;
-			red)
+			orange)
 				themes+=("${THEME_VARIANTS[3]}")
 				shift
 				;;
-			orange)
+			pink)
 				themes+=("${THEME_VARIANTS[4]}")
 				shift
 				;;
-			yellow)
+			purple)
 				themes+=("${THEME_VARIANTS[5]}")
 				shift
 				;;
-			green)
+			red)
 				themes+=("${THEME_VARIANTS[6]}")
 				shift
 				;;
@@ -277,7 +279,7 @@ while [[ $# -gt 0 ]]; do
 				themes+=("${THEME_VARIANTS[7]}")
 				shift
 				;;
-			grey)
+			yellow)
 				themes+=("${THEME_VARIANTS[8]}")
 				shift
 				;;
@@ -324,16 +326,28 @@ while [[ $# -gt 0 ]]; do
 		shift
 		for variant in $@; do
 			case "$variant" in
-			carbon)
-				carbon="true"
-				ctype="-Carbon"
-				echo -e "Carbon ColorScheme version! ..."
+			carbonfox)
+				carbonfox="true"
+				ctype="-Carbonfox"
+				echo -e "Carbonfox ColorScheme version! ..."
 				shift
 				;;
-			nord)
-				nord="true"
-				ctype="-Nord"
-				echo -e "Nord ColorScheme version! ..."
+			nightfox)
+				nightfox="true"
+				ctype="-Nightfox"
+				echo -e "Nightfox ColorScheme version! ..."
+				shift
+				;;
+			nordfox)
+				nordfox="true"
+				ctype="-Nordfox"
+				echo -e "Nordfox ColorScheme version! ..."
+				shift
+				;;
+			terafox)
+				terafox="true"
+				ctype="-Terafox"
+				echo -e "Terafox ColorScheme version! ..."
 				shift
 				;;
 			black)
@@ -427,14 +441,24 @@ compact_size() {
 	sed -i "/\$compact:/s/false/true/" "${SRC_DIR}/sass/_tweaks-temp.scss"
 }
 
-carbon_color() {
-	sed -i "/\@import/s/color-palette-default/color-palette-carbon/" "${SRC_DIR}/sass/_tweaks-temp.scss"
-	sed -i "/\$colorscheme:/s/default/carbon/" "${SRC_DIR}/sass/_tweaks-temp.scss"
+carbonfox_color() {
+	sed -i "/\@import/s/color-palette-default/color-palette-carbonfox/" "${SRC_DIR}/sass/_tweaks-temp.scss"
+	sed -i "/\$colorscheme:/s/default/carbonfox/" "${SRC_DIR}/sass/_tweaks-temp.scss"
 }
 
-nord_color() {
-	sed -i "/\@import/s/color-palette-default/color-palette-nord/" "${SRC_DIR}/sass/_tweaks-temp.scss"
-	sed -i "/\$colorscheme:/s/default/nord/" "${SRC_DIR}/sass/_tweaks-temp.scss"
+nightfox_color() {
+	sed -i "/\@import/s/color-palette-default/color-palette-nightfox/" "${SRC_DIR}/sass/_tweaks-temp.scss"
+	sed -i "/\$colorscheme:/s/default/nightfox/" "${SRC_DIR}/sass/_tweaks-temp.scss"
+}
+
+nordfox_color() {
+	sed -i "/\@import/s/color-palette-default/color-palette-nordfox/" "${SRC_DIR}/sass/_tweaks-temp.scss"
+	sed -i "/\$colorscheme:/s/default/nordfox/" "${SRC_DIR}/sass/_tweaks-temp.scss"
+}
+
+terafox_color() {
+	sed -i "/\@import/s/color-palette-default/color-palette-terafox/" "${SRC_DIR}/sass/_tweaks-temp.scss"
+	sed -i "/\$colorscheme:/s/default/terafox/" "${SRC_DIR}/sass/_tweaks-temp.scss"
 }
 
 blackness_color() {
@@ -466,29 +490,29 @@ gnome_shell_version() {
 theme_color() {
 	if [[ "$theme" != '' ]]; then
 		case "$theme" in
-		-Purple)
-			theme_color='purple'
+		-Green)
+			theme_color='green'
 			;;
-		-Pink)
-			theme_color='pink'
-			;;
-		-Red)
-			theme_color='red'
+		-Grey)
+			theme_color='grey'
 			;;
 		-Orange)
 			theme_color='orange'
 			;;
-		-Yellow)
-			theme_color='yellow'
+		-Pink)
+			theme_color='pink'
 			;;
-		-Green)
-			theme_color='green'
+		-Purple)
+			theme_color='purple'
+			;;
+		-Red)
+			theme_color='red'
 			;;
 		-Teal)
 			theme_color='teal'
 			;;
-		-Grey)
-			theme_color='grey'
+		-Yellow)
+			theme_color='yellow'
 			;;
 		esac
 		tweaks_temp
@@ -505,12 +529,20 @@ theme_tweaks() {
 		compact_size
 	fi
 
-	if [[ "$carbon" = "true" ]]; then
-		carbon_color
+	if [[ "$carbonfox" = "true" ]]; then
+		carbonfox_color
 	fi
 
-	if [[ "$nord" = "true" ]]; then
-		nord_color
+	if [[ "$nightfox" = "true" ]]; then
+		nightfox_color
+	fi
+
+	if [[ "$nordfox" = "true" ]]; then
+		nordfox_color
+	fi
+
+	if [[ "$terafox" = "true" ]]; then
+		terafox_color
 	fi
 
 	if [[ "$blackness" = "true" ]]; then
@@ -568,8 +600,8 @@ install_theme() {
 	for theme in "${themes[@]}"; do
 		for color in "${colors[@]}"; do
 			for size in "${sizes[@]}"; do
-				install "${dest:-$DEST_DIR}" "${name:-$THEME_NAME}" "$theme" "$color" "$size" "$ctype"
-				make_gtkrc "${dest:-$DEST_DIR}" "${name:-$THEME_NAME}" "$theme" "$color" "$size" "$ctype"
+				install "${dest:-$DEST_DIR}" "${_name:-$THEME_NAME}" "$theme" "$color" "$size" "$ctype" "$window"
+				make_gtkrc "${dest:-$DEST_DIR}" "${_name:-$THEME_NAME}" "$theme" "$color" "$size" "$ctype" "$window"
 			done
 		done
 	done
