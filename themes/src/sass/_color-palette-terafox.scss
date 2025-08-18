@@ -1,0 +1,73 @@
+// Terafox Theme Color Palette
+
+// Blue
+$blue-light: #2848a9;
+$blue-dark: #73a3b7;
+
+// Cyan
+$cyan-light: #50848c;
+$cyan-dark: #93ccdc;
+
+// Green
+$green-light: #396847;
+$green-dark: #8eb2af;
+
+// Orange
+$orange-light: #955f61;
+$orange-dark: #ff9664;
+
+// Pink
+$pink-light: #a440b5;
+$pink-dark: #d38d97;
+
+// Purple
+$purple-light: #6e33ce;
+$purple-dark: #b97490;
+
+// Red
+$red-light: #a5222f;
+$red-dark: #eb746b;
+
+// Teal
+$teal-light: #287980;
+$teal-dark: #afd4de;
+
+// Yellow
+$yellow-light: #ac5402;
+$yellow-dark: #fdb292;
+
+// Grey
+$grey-050: #eaeeee;
+$grey-100: #e6eaea;
+$grey-150: #dce5e5;
+$grey-200: #cbd9d8;
+$grey-250: #c4d4d3;
+$grey-300: #b8ccca;
+$grey-350: #abc4c4;
+$grey-400: #94b3b3;
+$grey-450: #88aaaa;
+$grey-500: #709999;
+$grey-550: #668f8f;
+$grey-600: #587b7b;
+$grey-650: #425e5e;
+$grey-700: #2d4f56;
+$grey-750: #254147;
+$grey-800: #1d3337;
+$grey-850: #0f1c1e;
+$grey-900: #0e191b;
+$grey-950: #070d0e;
+
+// White
+$white: #f6f2ee;
+
+// Black
+$black: #152528;
+
+// Theme
+$default-light: $blue-light;
+$default-dark: $blue-dark;
+
+// Button
+$button-close: if($topbar == 'light', #a5222f, #eb746b);
+$button-max: if($topbar == 'light', #396847, #8eb2af);
+$button-min: if($topbar == 'light', #ac5402, #fdb292);
