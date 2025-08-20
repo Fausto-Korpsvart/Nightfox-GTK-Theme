@@ -59,7 +59,7 @@ sudo apt install gtk2-engines-murrine
 
 ## 🔨 Applying the Theme
 
-- For **GTK3**, apply themes from **Gnome Tweaks** or **Refine**
+- For **GTK3**, apply themes from **Gnome Tweaks**, **Refine** or **Tuner**
 - For GTK4 applications it is only necessary to have moved the `assets`, `gtk.css` and `gtk-dark.css` files to the `~/.config/gtk-4.0` path,
   and if you notice that the theme has not been applied, just close and reopen the application.
 
@@ -136,10 +136,10 @@ Run the following command in the terminal for a general installation
 
 --tweaks                Specify versions for tweaks
                         1. [carbonfox|nightfox|nordfox|terafox] Carbonfox|Nightfox|Nordfox|Terafox ColorSchemes version
-                        2. black     Blackness color version
-                        3. float     Floating gnome-shell panel style
-                        4. outline   Windows with 2px outline style
-                        5. macos     macOS style windows button
+                        2. black      Blackness color version
+                        3. float      Floating gnome-shell panel style
+                        4. outline    Windows with 2px outline style
+                        5. macos      macOS style windows button
 
 -h, --help              Show help
 ```
@@ -179,4 +179,4 @@ Thanks to [@Icy-Thought](https://github.com/Icy-Thought),[@D3vil0p3r](https://gi
 
 ## Support
 
-<!-- [![PayPal Support](https://img.shields.io/badge/Donate-PayPal-00457C?style=for-the-badge&logo=paypalColor=white)](https://www.paypal.com/donate/?hosted_button_id=LKVTXNA36FTV4) -->
+[![PayPal Support](https://img.shields.io/badge/Donate-PayPal-00457C?style=for-the-badge&logo=paypalColor=white)](https://www.paypal.com/donate/?hosted_button_id=LKVTXNA36FTV4)
