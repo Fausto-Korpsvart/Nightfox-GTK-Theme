@@ -23,16 +23,16 @@
 
 // Sidebar & Scrollbar
 %sidebar_style {
-	background-color: if($variant == 'light', $grey-150, $grey-900);
+	background-color: if($variant == 'light', $grey-100, $grey-900);
 
 	@if $colorscheme == 'carbonfox' {
-		background-color: if($variant == 'light', $grey-150, $grey-900);
+		background-color: if($variant == 'light', $grey-100, $grey-900);
 	} @else if $colorscheme == 'nightfox' {
-		background-color: if($variant == 'light', $grey-150, $grey-850);
+		background-color: if($variant == 'light', $grey-100, $grey-850);
 	} @else if $colorscheme == 'nordfox' {
-		background-color: if($variant == 'light', $grey-150, $grey-850);
+		background-color: if($variant == 'light', $grey-100, $grey-850);
 	} @else if $colorscheme == 'terafox' {
-		background-color: if($variant == 'light', $grey-150, $grey-850);
+		background-color: if($variant == 'light', $grey-100, $grey-850);
 	}
 
 	color: on($background);
@@ -294,7 +294,7 @@ avatar {
 		color: $text-secondary;
 		box-shadow: none;
 		outline: none;
-		background-color: if($variant == 'light', rgba($base, 0.6), $fill);
+		background-color: if($variant == 'light', $grey-100, $fill);
 		color: $text;
 	}
 
