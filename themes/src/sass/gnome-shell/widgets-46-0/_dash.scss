@@ -54,9 +54,9 @@ $dash_spacing: $base_margin * 0.5;
 			padding-bottom: $dash_edge_offset; // align with other items
 
 			.overview-icon {
-				border-radius: $modal_radius;
-				padding: $base_padding;
-				spacing: $base_padding;
+				border-radius: $icon_radius;
+				padding: $base_margin;
+				spacing: $base_margin;
 				text-align: center;
 				transition-duration: 100ms;
 				background-color: transparent;
