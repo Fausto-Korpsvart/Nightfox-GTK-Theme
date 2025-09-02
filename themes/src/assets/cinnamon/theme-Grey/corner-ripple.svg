@@ -33,7 +33,7 @@
   <g
      transform="translate(0 -948.36)"
      id="g1"
-     style="fill:#575279;fill-opacity:1">
+     style="fill:#3c5372;fill-opacity:1">
     <circle
        id="corner-ripple"
        cx="52"
@@ -41,6 +41,6 @@
        r="48"
        fill="#009688"
        opacity=".25"
-       style="fill:#575279;fill-opacity:1" />
+       style="fill:#3c5372;fill-opacity:1" />
   </g>
 </svg>

@@ -103,13 +103,13 @@ Run the following command in the terminal for a general installation
 > The `./install.sh` allows some specific options like:
 
 ```sh
-./install.sh --tweaks nightfox macos outline float -t orange -l
+./install.sh --tweaks duskfox macos outline float -t orange -l
 ```
 
 > To customise the name of the theme, you can use the `-n` parameter, e.g.
 
 ```sh
-./install.sh -n "Nightfox-Float-Border" --tweaks outline float
+./install.sh -n "Duskfox-Float-Border" --tweaks outline float
 ```
 
 > [!TIP]
@@ -135,7 +135,7 @@ Run the following command in the terminal for a general installation
 -u, --uninstall         Uninstall/Remove installed themes or links
 
 --tweaks                Specify versions for tweaks
-                        1. [carbonfox|nightfox|nordfox|terafox] Carbonfox|Nightfox|Nordfox|Terafox ColorSchemes version
+                        1. [carbonfox|duskfox|nordfox|terafox] Carbonfox|Duskfox|Nordfox|Terafox ColorSchemes version
                         2. black      Blackness color version
                         3. float      Floating gnome-shell panel style
                         4. outline    Windows with 2px outline style

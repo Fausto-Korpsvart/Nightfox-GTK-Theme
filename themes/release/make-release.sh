@@ -5,7 +5,7 @@ THEME_DIR=$(cd $(dirname $0) && pwd)
 THEME_NAME=Nightfox
 
 _THEME_VARIANTS=('' '-Green' '-Grey' '-Orange' '-Pink' '-Purple' '-Red' '-Teal' '-Yellow')
-_SCHEME_VARIANTS=('' '-Carbonfox' '-Nightfox' '-Nordfox' '-Terafox')
+_SCHEME_VARIANTS=('' '-Carbonfox' '-Duskfox' '-Nordfox' '-Terafox')
 _COLOR_VARIANTS=('-Light' '-Dark')
 _SIZE_VARIANTS=('' '-Compact')
 
@@ -46,5 +46,5 @@ Clear_theme() {
     done
 }
 
-cd .. && ./install.sh -d $THEME_DIR -t all && ./install.sh -d $THEME_DIR --tweaks carbonfox -t all && ./install.sh -d $THEME_DIR --tweaks nightfox -t all && ./install.sh -d $THEME_DIR --tweaks nordfox -t all && ./install.sh -d $THEME_DIR --tweaks terafox -t all
+cd .. && ./install.sh -d $THEME_DIR -t all && ./install.sh -d $THEME_DIR --tweaks carbonfox -t all && ./install.sh -d $THEME_DIR --tweaks duskfox -t all && ./install.sh -d $THEME_DIR --tweaks nordfox -t all && ./install.sh -d $THEME_DIR --tweaks terafox -t all
 cd $THEME_DIR && Tar_themes && Clear_theme

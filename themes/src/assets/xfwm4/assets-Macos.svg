@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   sodipodi:docname="assets-Macos.svg"
+   sodipodi:docname="assets-Nightfox-Macos.svg"
    inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
    version="1.1"
    id="svg2"
@@ -19,11 +19,11 @@
      id="defs4" />
   <sodipodi:namedview
      inkscape:document-rotation="0"
-     inkscape:window-maximized="1"
-     inkscape:window-y="0"
-     inkscape:window-x="0"
-     inkscape:window-height="1009"
-     inkscape:window-width="1867"
+     inkscape:window-maximized="0"
+     inkscape:window-y="102"
+     inkscape:window-x="102"
+     inkscape:window-height="977"
+     inkscape:window-width="1835"
      inkscape:guide-bbox="true"
      showguides="false"
      fit-margin-bottom="10"
@@ -43,9 +43,9 @@
      showgrid="false"
      inkscape:current-layer="layer1"
      inkscape:document-units="px"
-     inkscape:cy="84.499252"
-     inkscape:cx="200.64153"
-     inkscape:zoom="2.8284274"
+     inkscape:cy="103.49999"
+     inkscape:cx="249.24998"
+     inkscape:zoom="2.0000002"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0"
      borderopacity="1.0"
@@ -156,7 +156,7 @@
            height="34"
            width="32"
            id="rect1683"
-           style="fill:#232136;fill-opacity:1;stroke:none;stroke-width:1.27242;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+           style="fill:#192330;fill-opacity:1;stroke:none;stroke-width:1.27242;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
         <rect
            style="opacity:0.1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.1547;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
            id="rect2083"
@@ -166,7 +166,7 @@
            y="585.36212" />
       </g>
       <circle
-         style="opacity:1;fill:#eb6f92;fill-opacity:1;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+         style="opacity:1;fill:#c94f6d;fill-opacity:1;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
          id="path2409"
          cx="37"
          cy="602.36212"
@@ -184,7 +184,7 @@
            height="34"
            width="32"
            id="rect2007"
-           style="fill:#1a182c;fill-opacity:1;stroke:none;stroke-width:1.27242;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+           style="fill:#131a24;fill-opacity:1;stroke:none;stroke-width:1.27242;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
       </g>
       <circle
          style="opacity:0.3;fill:#ffffff;fill-opacity:1;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
@@ -204,7 +204,7 @@
          width="100%"
          height="100%" />
       <circle
-         style="opacity:1;fill:#a3be8c;fill-opacity:1;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+         style="opacity:1;fill:#81b29a;fill-opacity:1;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
          id="circle2551"
          cx="37"
          cy="643.36212"
@@ -238,7 +238,7 @@
          width="100%"
          height="100%" />
       <circle
-         style="opacity:1;fill:#f6c177;fill-opacity:1;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+         style="opacity:1;fill:#dbc074;fill-opacity:1;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
          id="circle2559"
          cx="37"
          cy="684.36212"
@@ -407,13 +407,13 @@
          width="100%"
          height="100%" />
       <circle
-         style="opacity:1;fill:#eb6f92;fill-opacity:1;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+         style="opacity:1;fill:#c94f6d;fill-opacity:1;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
          id="circle2547"
          cx="117"
          cy="602.36212"
          r="8" />
       <circle
-         style="opacity:0.25;fill:#ffffff;fill-opacity:1;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+         style="opacity:0.25;fill:#c94f6d;fill-opacity:1;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
          id="circle2807"
          cx="117"
          cy="602.36212"
@@ -434,7 +434,7 @@
          width="100%"
          height="100%" />
       <circle
-         style="opacity:1;fill:#a3be8c;fill-opacity:1;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+         style="opacity:1;fill:#81b29a;fill-opacity:1;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
          id="circle2555"
          cx="117"
          cy="643.36212"
@@ -461,7 +461,7 @@
          width="100%"
          height="100%" />
       <circle
-         style="opacity:1;fill:#f6c177;fill-opacity:1;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+         style="opacity:1;fill:#dbc074;fill-opacity:1;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
          id="circle2563"
          cx="117"
          cy="684.36212"
@@ -493,7 +493,7 @@
          width="100%"
          height="100%" />
       <circle
-         style="opacity:1;fill:#a3be8c;fill-opacity:1;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+         style="opacity:1;fill:#81b29a;fill-opacity:1;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
          id="circle2571"
          cx="117"
          cy="725.36212"
@@ -909,7 +909,7 @@
          transform="translate(-3)">
         <path
            id="path8400"
-           style="opacity:1;fill:#1a182c;fill-opacity:1;stroke-width:7.36944;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+           style="opacity:1;fill:#131a24;fill-opacity:1;stroke-width:7.36944;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
            d="m 410,93 v 1 h -2 v 1 h -1 v 1 h -1 v 1 h -1 v 1 h -1 v 2 h -1 v 27 h 1 1 10 V 95 94 93 Z"
            transform="translate(-412,631.36214)"
            sodipodi:nodetypes="ccccccccccccccccccccc" />
@@ -932,7 +932,7 @@
          transform="translate(-3)">
         <path
            id="path8508"
-           style="opacity:1;fill:#1a182c;fill-opacity:1;stroke-width:7.36944;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+           style="opacity:1;fill:#131a24;fill-opacity:1;stroke-width:7.36944;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
            d="m 431,93 v 1 1 32 h 10 1 1 v -27 h -1 v -2 h -1 v -1 h -1 v -1 h -1 v -1 h -1 v -1 h -2 v -1 z"
            transform="matrix(-1,0,0,1,434,631.36211)"
            sodipodi:nodetypes="ccccccccccccccccccccc" />
@@ -950,7 +950,7 @@
          height="16"
          width="2"
          id="rect4138-3"
-         style="opacity:1;fill:#232136;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+         style="opacity:1;fill:#192330;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
       <rect
          style="opacity:0.1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="rect1400"
@@ -966,7 +966,7 @@
        id="left-inactive"
        inkscape:label="#g1452">
       <rect
-         style="opacity:1;fill:#1a182c;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         style="opacity:1;fill:#131a24;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="rect1448"
          width="2"
          height="16"
@@ -980,7 +980,7 @@
        id="right-inactive"
        inkscape:label="#g1458">
       <rect
-         style="opacity:1;fill:#1a182c;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         style="opacity:1;fill:#131a24;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="rect1454"
          width="2"
          height="16"
@@ -1001,7 +1001,7 @@
          height="16"
          width="2"
          id="rect1460"
-         style="opacity:1;fill:#232136;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+         style="opacity:1;fill:#192330;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
       <rect
          style="opacity:0.1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="rect1462"
@@ -1021,7 +1021,7 @@
          inkscape:connector-curvature="0"
          id="path1472"
          d="m 98,730.36203 h -2 v 9.00012 h 1 v 1 l 9,-1.2e-4 v -2 l -8,1.2e-4 z"
-         style="opacity:1;fill:#232136;fill-opacity:1;stroke:none;stroke-width:0.666667;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+         style="opacity:1;fill:#192330;fill-opacity:1;stroke:none;stroke-width:0.666667;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
       <path
          style="opacity:0.1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.666667;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          d="m 97,730.36215 -1,-1.2e-4 v 9.00012 h 1 v 1 l 9,-1.2e-4 v -0.99988 h -9 z"
@@ -1034,7 +1034,7 @@
        transform="translate(374,-54.999986)"
        inkscape:label="#g1481">
       <path
-         style="opacity:1;fill:#1a182c;fill-opacity:1;stroke:none;stroke-width:0.666667;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         style="opacity:1;fill:#131a24;fill-opacity:1;stroke:none;stroke-width:0.666667;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          d="m 98,730.36203 h -2 v 9.00012 h 1 v 1 l 9,-1.2e-4 v -2 l -8,1.2e-4 z"
          id="path1475"
          inkscape:connector-curvature="0"
@@ -1049,14 +1049,14 @@
          inkscape:connector-curvature="0"
          id="path1485"
          d="m 98,730.36203 h -2 v 9.00012 h 1 v 1 l 9,-1.2e-4 v -2 l -8,1.2e-4 z"
-         style="opacity:1;fill:#1a182c;fill-opacity:1;stroke:none;stroke-width:0.666667;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+         style="opacity:1;fill:#131a24;fill-opacity:1;stroke:none;stroke-width:0.666667;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     </g>
     <g
        id="bottom-right-active"
        transform="matrix(-1,0,0,1,606,-66.999986)"
        inkscape:label="#g1499">
       <path
-         style="opacity:1;fill:#232136;fill-opacity:1;stroke:none;stroke-width:0.666667;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         style="opacity:1;fill:#192330;fill-opacity:1;stroke:none;stroke-width:0.666667;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          d="m 98,730.36203 h -2 v 9.00012 h 1 v 1 l 9,-1.2e-4 v -2 l -8,1.2e-4 z"
          id="path1493"
          inkscape:connector-curvature="0"
@@ -1080,7 +1080,7 @@
          height="16"
          width="2"
          id="rect1501"
-         style="opacity:1;fill:#232136;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+         style="opacity:1;fill:#192330;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
       <rect
          style="opacity:0.1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="rect1503"
@@ -1096,7 +1096,7 @@
        id="bottom-inactive"
        inkscape:label="#g1511">
       <rect
-         style="opacity:1;fill:#1a182c;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         style="opacity:1;fill:#131a24;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="rect1507"
          width="2"
          height="16"
@@ -1113,7 +1113,7 @@
          transform="translate(-3)">
         <path
            id="path1725"
-           style="opacity:1;fill:#232136;fill-opacity:1;stroke-width:7.36944;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+           style="opacity:1;fill:#192330;fill-opacity:1;stroke-width:7.36944;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
            d="m 396,93 v 1 h -2 v 1 h -1 v 1 h -1 v 1 h -1 v 1 h -1 v 2 h -1 v 27 h 1 1 10 V 95 94 93 Z"
            transform="translate(-398,631.36214)"
            sodipodi:nodetypes="ccccccccccccccccccccc" />

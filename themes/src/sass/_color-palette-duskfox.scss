@@ -1,0 +1,73 @@
+// Duskfox Theme Color Palette
+
+// Blue
+$blue-light: #2848a9;
+$blue-dark: #5ebdd5;
+
+// Cyan
+$cyan-light: #50848c;
+$cyan-dark: #a6dae3;
+
+// Green
+$green-light: #396847;
+$green-dark: #b1d196;
+
+// Orange
+$orange-light: #955f61;
+$orange-dark: #f0a4a2;
+
+// Pink
+$pink-light: #a440b5;
+$pink-dark: #eb98c3;
+
+// Purple
+$purple-light: #6e33ce;
+$purple-dark: #c4a7e7;
+
+// Red
+$red-light: #a5222f;
+$red-dark: #eb6f92;
+
+// Teal
+$teal-light: #287980;
+$teal-dark: #9ccfd8;
+
+// Yellow
+$yellow-light: #ac5402;
+$yellow-dark: #f9cb8c;
+
+// Grey
+$grey-050: #eae8ff;
+$grey-100: #e0def4;
+$grey-150: #dbd9e8;
+$grey-200: #cdcbe0;
+$grey-250: #c2c0d8;
+$grey-300: #b6b3d0;
+$grey-350: #aaa6c9;
+$grey-400: #9e9ac1;
+$grey-450: #928db9;
+$grey-500: #8581b1;
+$grey-550: #7974aa;
+$grey-600: #625c87;
+$grey-650: #575279;
+$grey-700: #4c4769;
+$grey-750: #3a3559;
+$grey-800: #322e42;
+$grey-850: #232136;
+$grey-900: #1a182c;
+$grey-950: #08080d;
+
+// White
+$white: #f6f2ee;
+
+// Black
+$black: #232136;
+
+// Theme
+$default-light: $blue-light;
+$default-dark: $blue-dark;
+
+// Button
+$button-close: if($topbar == 'light', #a5222f, #eb6f92);
+$button-max: if($topbar == 'light', #396847, #a3be8c);
+$button-min: if($topbar == 'light', #ac5402, #f6c177);

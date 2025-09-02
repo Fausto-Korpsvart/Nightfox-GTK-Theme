@@ -1,46 +1,46 @@
 #! /usr/bin/env bash
 
 for theme in '' '-Blue' '-Green' '-Grey' '-Orange' '-Pink' '-Purple' '-Red' '-Teal' '-Yellow'; do
-    for type in '' '-Carbonfox' '-Nightfox' '-Nordfox' '-Terafox'; do
+    for type in '' '-Carbonfox' '-Duskfox' '-Nordfox' '-Terafox'; do
         case "$theme" in
             '')
-                theme_color_dark='#5ebdd5'
+                theme_color_dark='#719cd6'
                 theme_color_light='#2848a9'
                 ;;
             -Blue)
-                theme_color_dark='#5ebdd5'
+                theme_color_dark='#719cd6'
                 theme_color_light='#2848a9'
                 ;;
             -Green)
-                theme_color_dark='#b1d196'
+                theme_color_dark='#81b29a'
                 theme_color_light='#396847'
                 ;;
             -Grey)
-                theme_color_dark='#c2c0d8'
-                theme_color_light='#575279'
+                theme_color_dark='#d3c7bb'
+                theme_color_light='#3c5372'
                 ;;
             -Orange)
-                theme_color_dark='#f0a4a2'
+                theme_color_dark='#f4a261'
                 theme_color_light='#955f61'
                 ;;
             -Pink)
-                theme_color_dark='#eb98c3'
+                theme_color_dark='#d67ad2'
                 theme_color_light='#a440b5'
                 ;;
             -Purple)
-                theme_color_dark='#c4a7e7'
+                theme_color_dark='#9d79d6'
                 theme_color_light='#6e33ce'
                 ;;
             -Red)
-                theme_color_dark='#eb6f92'
+                theme_color_dark='#c94f6d'
                 theme_color_light='#a5222f'
                 ;;
             -Teal)
-                theme_color_dark='#9ccfd8'
+                theme_color_dark='#63cdcf'
                 theme_color_light='#287980'
                 ;;
             -Yellow)
-                theme_color_dark='#f9cb8c'
+                theme_color_dark='#dbc074'
                 theme_color_light='#ac5402'
                 ;;
         esac
@@ -93,49 +93,49 @@ for theme in '' '-Blue' '-Green' '-Grey' '-Orange' '-Pink' '-Purple' '-Red' '-Te
             esac
         fi
 
-        if [[ "$type" == '-Nightfox' ]]; then
-            panel_dark='#192330'
+        if [[ "$type" == '-Duskfox' ]]; then
+            panel_dark='#232136'
             panel_light='#f6f2ee'
 
             case "$theme" in
                 '')
-                    theme_color_dark='#719cd6'
+                    theme_color_dark='#5ebdd5'
                     theme_color_light='#2848a9'
                     ;;
                 -Blue)
-                    theme_color_dark='#719cd6'
+                    theme_color_dark='#5ebdd5'
                     theme_color_light='#2848a9'
                     ;;
                 -Green)
-                    theme_color_dark='#81b29a'
+                    theme_color_dark='#b1d196'
                     theme_color_light='#396847'
                     ;;
                 -Grey)
-                    theme_color_dark='#d3c7bb'
-                    theme_color_light='#3c5372'
+                    theme_color_dark='#c2c0d8'
+                    theme_color_light='#575279'
                     ;;
                 -Orange)
-                    theme_color_dark='#f4a261'
+                    theme_color_dark='#f0a4a2'
                     theme_color_light='#955f61'
                     ;;
                 -Pink)
-                    theme_color_dark='#d67ad2'
+                    theme_color_dark='#eb98c3'
                     theme_color_light='#a440b5'
                     ;;
                 -Purple)
-                    theme_color_dark='#9d79d6'
+                    theme_color_dark='#c4a7e7'
                     theme_color_light='#6e33ce'
                     ;;
                 -Red)
-                    theme_color_dark='#c94f6d'
+                    theme_color_dark='#eb6f92'
                     theme_color_light='#a5222f'
                     ;;
                 -Teal)
-                    theme_color_dark='#63cdcf'
+                    theme_color_dark='#9ccfd8'
                     theme_color_light='#287980'
                     ;;
                 -Yellow)
-                    theme_color_dark='#dbc074'
+                    theme_color_dark='#f9cb8c'
                     theme_color_light='#ac5402'
                     ;;
             esac
@@ -240,15 +240,15 @@ for theme in '' '-Blue' '-Green' '-Grey' '-Orange' '-Pink' '-Purple' '-Red' '-Te
         if [[ "$type" != '' ]]; then
             rm -rf "thumbnail${theme}${type}.svg"
             cp -rf "thumbnail.svg" "thumbnail${theme}${type}.svg"
-            sed -i "s/#5ebdd5/${theme_color_dark}/g" "thumbnail${theme}${type}.svg"
+            sed -i "s/#719cd6/${theme_color_dark}/g" "thumbnail${theme}${type}.svg"
             sed -i "s/#2848a9/${theme_color_light}/g" "thumbnail${theme}${type}.svg"
             sed -i "s/#f6f2ee/${panel_light}/g" "thumbnail${theme}${type}.svg"
-            sed -i "s/#232136/${panel_dark}/g" "thumbnail${theme}${type}.svg"
+            sed -i "s/#192330/${panel_dark}/g" "thumbnail${theme}${type}.svg"
             sed -i "s/thumbnail/thumbnail${theme}${type}/g" "thumbnail${theme}${type}.svg"
         elif [[ "$theme" != '' ]]; then
             rm -rf "thumbnail${theme}.svg"
             cp -rf "thumbnail.svg" "thumbnail${theme}.svg"
-            sed -i "s/#5ebdd5/${theme_color_dark}/g" "thumbnail${theme}.svg"
+            sed -i "s/#719cd6/${theme_color_dark}/g" "thumbnail${theme}.svg"
             sed -i "s/#2848a9/${theme_color_light}/g" "thumbnail${theme}.svg"
             sed -i "s/thumbnail/thumbnail${theme}/g" "thumbnail${theme}.svg"
         fi

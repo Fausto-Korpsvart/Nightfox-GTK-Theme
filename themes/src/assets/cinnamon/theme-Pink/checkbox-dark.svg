@@ -40,7 +40,7 @@
      inkscape:zoom="19.666667"
      inkscape:cx="15.68644"
      inkscape:cy="14.542373"
-     inkscape:window-width="1867"
+     inkscape:window-width="1920"
      inkscape:window-height="1009"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -56,7 +56,7 @@
      rx="4"
      ry="4" />
   <rect
-     style="fill:#eb98c3;fill-opacity:1;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"
+     style="fill:#d67ad2;fill-opacity:1;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"
      id="rect616"
      width="20"
      height="20"
@@ -67,7 +67,7 @@
   <path
      id="rect340"
      d="m 18.36396,7.7576861 c -0.391736,-0.3917365 -1.022477,-0.3917368 -1.414214,0 L 10.585785,14.121648 7.0502516,10.586113 c -0.3917367,-0.391737 -1.0224771,-0.391736 -1.4142135,0 -0.3917365,0.391736 -0.3917368,1.022477 0,1.414214 l 4.2426409,4.242641 c 0.02448,0.02448 0.04973,0.04625 0.07596,0.06767 0.393511,0.321347 0.971002,0.299581 1.338255,-0.06767 l 7.071068,-7.0710684 c 0.391737,-0.3917367 0.391736,-1.0224771 0,-1.4142135 z"
-     style="fill:#232136;fill-opacity:1" />
+     style="fill:#192330;fill-opacity:1" />
   <path
      id="rect885"
      style="opacity:0.1;fill:#ffffff;fill-opacity:1;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"

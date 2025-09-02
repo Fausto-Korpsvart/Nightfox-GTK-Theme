@@ -23,10 +23,10 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="true"
      showguides="true"
-     inkscape:zoom="2"
-     inkscape:cx="186.75"
-     inkscape:cy="91.5"
-     inkscape:window-width="1835"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="49.320698"
+     inkscape:cy="54.093669"
+     inkscape:window-width="1888"
      inkscape:window-height="977"
      inkscape:window-x="102"
      inkscape:window-y="102"
@@ -100,7 +100,7 @@
          stop-color="#3C3C3C"
          offset="1"
          id="stop56"
-         style="stop-color:#322e42;stop-opacity:1;" />
+         style="stop-color:#212e3f;stop-opacity:1;" />
     </linearGradient>
     <linearGradient
        id="linearGradient55"
@@ -113,7 +113,7 @@
          stop-color="#3C3C3C"
          offset="1"
          id="stop55"
-         style="stop-color:#322e42;stop-opacity:1;" />
+         style="stop-color:#212e3f;stop-opacity:1;" />
     </linearGradient>
     <linearGradient
        id="linearGradient54"
@@ -143,7 +143,7 @@
          stop-color="#212121"
          offset="1"
          id="stop17"
-         style="stop-color:#5ebdd5;stop-opacity:1;" />
+         style="stop-color:#719cd6;stop-opacity:1;" />
     </linearGradient>
     <linearGradient
        id="linearGradient15"
@@ -156,7 +156,7 @@
          stop-color="#4DB6AC"
          offset="1"
          id="stop15"
-         style="stop-color:#5ebdd5;stop-opacity:1;" />
+         style="stop-color:#719cd6;stop-opacity:1;" />
     </linearGradient>
     <linearGradient
        id="linearGradient14"
@@ -356,7 +356,7 @@
          stop-color="#4DB6AC"
          offset="1"
          id="stop19"
-         style="stop-color:#5ebdd5;stop-opacity:1;" />
+         style="stop-color:#719cd6;stop-opacity:1;" />
     </linearGradient>
     <linearGradient
        id="color-surface"
@@ -370,7 +370,7 @@
          stop-color="#FFFFFF"
          offset="1"
          id="stop22"
-         style="stop-color:#e0def4;stop-opacity:1;" />
+         style="stop-color:#ebe5df;stop-opacity:1;" />
     </linearGradient>
     <linearGradient
        id="color-surface-dark"
@@ -383,7 +383,7 @@
          stop-color="#3C3C3C"
          offset="1"
          id="stop25"
-         style="stop-color:#322e42;stop-opacity:1;" />
+         style="stop-color:#212e3f;stop-opacity:1;" />
     </linearGradient>
     <linearGradient
        id="color-background">
@@ -391,7 +391,7 @@
          stop-color="#F2F2F2"
          offset="1"
          id="stop28"
-         style="stop-color:#e0def4;stop-opacity:1;" />
+         style="stop-color:#ebe5df;stop-opacity:1;" />
     </linearGradient>
     <linearGradient
        id="color-background-dark"
@@ -400,7 +400,7 @@
          stop-color="#212121"
          offset="1"
          id="stop31"
-         style="stop-color:#322e42;stop-opacity:1;" />
+         style="stop-color:#212e3f;stop-opacity:1;" />
     </linearGradient>
     <linearGradient
        id="color-base"
@@ -414,7 +414,7 @@
          stop-color="#FFFFFF"
          offset="1"
          id="stop34"
-         style="stop-color:#e0def4;stop-opacity:1;" />
+         style="stop-color:#ebe5df;stop-opacity:1;" />
     </linearGradient>
     <filter
        inkscape:collect="always"
@@ -572,7 +572,7 @@
        fill="url(#color-background-dark)"
        id="rect52"
        y="0"
-       style="fill:#232136;fill-opacity:1" />
+       style="fill:#192330;fill-opacity:1" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -587,7 +587,7 @@
          fill="url(#color-surface)"
          xlink:href="#base-selectionmode-checkbox"
          id="use44"
-         style="fill:#dbd9e8;fill-opacity:1" />
+         style="fill:#ebe5df;fill-opacity:1" />
     </g>
     <g
        id="selectionmode-checkbox-checked"
@@ -634,7 +634,7 @@
          fill="url(#color-on-primary-light)"
          xlink:href="#base-selectionmode-checkmark"
          id="use59"
-         style="fill:#232136;fill-opacity:1" />
+         style="fill:#070a0d;fill-opacity:1" />
     </g>
     <g
        id="scale-horz-marks-before-slider"

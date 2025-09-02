@@ -157,7 +157,7 @@ $surface:                               if($variant == 'light', background(b), b
 $base:                                  if($variant == 'light', background(c), background(g));
 $base-alt:                              if($variant == 'light', background(d), background(h));
 $card:                                  if($variant == 'light', background(b), background(h));
-$menu:                                  if($variant == 'light', $grey-150, $grey-800);
+$menu:                                  if($variant == 'light', $grey-200, $grey-900);
 
 $tooltip:                               if($variant == 'dark', rgba(darken(background(f), 3%), 0.9), rgba(darken(background(h), 3%), 0.9));
 $osd:                                   mix($primary, background(f), 0%);

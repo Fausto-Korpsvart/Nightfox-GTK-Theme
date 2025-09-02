@@ -10,7 +10,7 @@
 }
 
 %nautilus_content_style {
-	background-color: if($variant == 'light', rgba($grey-200, 0.4), $fill);
+	background-color: if($variant == 'light', $grey-100, $fill);
 	border-radius: $corner-radius;
 	margin: 0 $space-size $space-size $space-size;
 }
@@ -23,12 +23,12 @@
 
 // Sidebar & Scrollbar
 %sidebar_style {
-	background-color: if($variant == 'light', $grey-100, $grey-900);
+	background-color: if($variant == 'light', $grey-100, $grey-850);
 
 	@if $colorscheme == 'carbonfox' {
 		background-color: if($variant == 'light', $grey-100, $grey-900);
-	} @else if $colorscheme == 'nightfox' {
-		background-color: if($variant == 'light', $grey-100, $grey-850);
+	} @else if $colorscheme == 'duskfox' {
+		background-color: if($variant == 'light', $grey-100, $grey-900);
 	} @else if $colorscheme == 'nordfox' {
 		background-color: if($variant == 'light', $grey-100, $grey-850);
 	} @else if $colorscheme == 'terafox' {

@@ -11,11 +11,11 @@ LineWidth=1
 #The color (RGBA) of the outer stroke.
 OuterStrokeColor=246;;242;;238;;50
 #The starting color (RGBA) of the fill gradient.
-FillStartColor=35;;33;;54;;200
+FillStartColor=25;;35;;48;;200
 #The ending color (RGBA) of the fill gradient.
-FillEndColor=35;;33;;54;;200
+FillEndColor=25;;35;;48;;200
 #The color (RGBA) of the inner stroke.
-InnerStrokeColor=35;;33;;54;;100
+InnerStrokeColor=25;;35;;48;;100
 
 [PlankDockTheme]
 #The padding on the left/right dock edges, in tenths of a percent of IconSize.

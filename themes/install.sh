@@ -71,7 +71,7 @@ OPTIONS:
   -u, --uninstall         Uninstall/Remove installed themes or links
 
   --tweaks                Specify versions for tweaks
-                          1. [carbonfox|nightfox|nordfox|terafox] Carbonfox|Nightfox|Nordfox|Terafox ColorSchemes version
+                          1. [carbonfox|duskfox|nordfox|terafox] Carbonfox|Duskfox|Nordfox|Terafox ColorSchemes version
                           2. black          Blackness color version
                           3. float          Floating gnome-shell panel style
                           4. outline        Windows with 2px outline style
@@ -332,10 +332,10 @@ while [[ $# -gt 0 ]]; do
 				echo -e "Carbonfox ColorScheme version! ..."
 				shift
 				;;
-			nightfox)
-				nightfox="true"
-				ctype="-Nightfox"
-				echo -e "Nightfox ColorScheme version! ..."
+			duskfox)
+				duskfox="true"
+				ctype="-Duskfox"
+				echo -e "Duskfox ColorScheme version! ..."
 				shift
 				;;
 			nordfox)
@@ -446,9 +446,9 @@ carbonfox_color() {
 	sed -i "/\$colorscheme:/s/default/carbonfox/" "${SRC_DIR}/sass/_tweaks-temp.scss"
 }
 
-nightfox_color() {
-	sed -i "/\@import/s/color-palette-default/color-palette-nightfox/" "${SRC_DIR}/sass/_tweaks-temp.scss"
-	sed -i "/\$colorscheme:/s/default/nightfox/" "${SRC_DIR}/sass/_tweaks-temp.scss"
+duskfox_color() {
+	sed -i "/\@import/s/color-palette-default/color-palette-duskfox/" "${SRC_DIR}/sass/_tweaks-temp.scss"
+	sed -i "/\$colorscheme:/s/default/duskfox/" "${SRC_DIR}/sass/_tweaks-temp.scss"
 }
 
 nordfox_color() {
@@ -533,8 +533,8 @@ theme_tweaks() {
 		carbonfox_color
 	fi
 
-	if [[ "$nightfox" = "true" ]]; then
-		nightfox_color
+	if [[ "$duskfox" = "true" ]]; then
+		duskfox_color
 	fi
 
 	if [[ "$nordfox" = "true" ]]; then

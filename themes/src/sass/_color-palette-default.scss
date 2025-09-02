@@ -1,8 +1,8 @@
-// Duskfox/Dayfox Theme Color Palette
+// Nightfox/Dayfox Theme Color Palette
 
 // Blue
 $blue-light: #2848a9;
-$blue-dark: #5ebdd5;
+$blue-dark: #719cd6;
 
 // Cyan
 $cyan-light: #50848c;
@@ -10,64 +10,64 @@ $cyan-dark: #a6dae3;
 
 // Green
 $green-light: #396847;
-$green-dark: #b1d196;
+$green-dark: #81b29a;
 
 // Orange
 $orange-light: #955f61;
-$orange-dark: #f0a4a2;
+$orange-dark: #f4a261;
 
 // Pink
 $pink-light: #a440b5;
-$pink-dark: #eb98c3;
+$pink-dark: #d67ad2;
 
 // Purple
 $purple-light: #6e33ce;
-$purple-dark: #c4a7e7;
+$purple-dark: #9d79d6;
 
 // Red
 $red-light: #a5222f;
-$red-dark: #eb6f92;
+$red-dark: #c94f6d;
 
 // Teal
 $teal-light: #287980;
-$teal-dark: #9ccfd8;
+$teal-dark: #63cdcf;
 
 // Yellow
 $yellow-light: #ac5402;
-$yellow-dark: #f9cb8c;
+$yellow-dark: #dbc074;
 
 // Grey
-$grey-050: #eae8ff;
-$grey-100: #e0def4;
-$grey-150: #dbd9e8;
-$grey-200: #cdcbe0;
-$grey-250: #c2c0d8;
-$grey-300: #b6b3d0;
-$grey-350: #aaa6c9;
-$grey-400: #9e9ac1;
-$grey-450: #928db9;
-$grey-500: #8581b1;
-$grey-550: #7974aa;
-$grey-600: #625c87;
-$grey-650: #575279;
-$grey-700: #4c4769;
-$grey-750: #3a3559;
-$grey-800: #322e42;
-$grey-850: #232136;
-$grey-900: #1a182c;
-$grey-950: #08080d;
+$grey-050: #faf4ed;
+$grey-100: #f2e9e1;
+$grey-150: #ebe5df;
+$grey-200: #e4dcd4;
+$grey-250: #d3c7bb;
+$grey-300: #e7d2be;
+$grey-350: #837a72;
+$grey-400: #aab0ad;
+$grey-450: #738091;
+$grey-500: #71839b;
+$grey-550: #3c5372;
+$grey-600: #39506d;
+$grey-650: #2b3b51;
+$grey-700: #29394f;
+$grey-750: #212e3f;
+$grey-800: #1c2735;
+$grey-850: #131a24;
+$grey-900: #0e131b;
+$grey-950: #070a0d;
 
 // White
-$white: #eae8ff;
+$white: #f6f2ee;
 
 // Black
-$black: #232136;
+$black: #192330;
 
 // Theme
 $default-light: $blue-light;
 $default-dark: $blue-dark;
 
 // Button
-$button-close: if($topbar == 'light', #a5222f, #eb6f92);
-$button-max: if($topbar == 'light', #396847, #a3be8c);
-$button-min: if($topbar == 'light', #ac5402, #f6c177);
+$button-close: if($topbar == 'light', #a5222f, #c94f6d);
+$button-max: if($topbar == 'light', #396847, #81b29a);
+$button-min: if($topbar == 'light', #ac5402, #dbc074);

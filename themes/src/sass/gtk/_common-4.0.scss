@@ -4234,7 +4234,6 @@ list {
 
 	> row {
 		padding: $space-size;
-		margin: 2px;
 		background-clip: padding-box;
 	}
 
@@ -4435,8 +4434,8 @@ row {
 // AdwActionRow
 row {
 	label.subtitle {
-		@extend .dim-label;
 		font-size: smaller;
+		@extend .dim-label;
 	}
 
 	> box.header {

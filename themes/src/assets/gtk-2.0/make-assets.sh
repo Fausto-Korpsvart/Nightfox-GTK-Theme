@@ -2,7 +2,7 @@
 
 for theme in '' '-Green' '-Grey' '-Orange' '-Pink' '-Purple' '-Red' '-Teal' '-Yellow'; do
     for color in '' '-Dark'; do
-        for type in '' '-Carbonfox' '-Nightfox' '-Nordfox' '-Terafox'; do
+        for type in '' '-Carbonfox' '-Duskfox' '-Nordfox' '-Terafox'; do
             if [[ "$color" == '' ]]; then
                 case "$theme" in
                     '')
@@ -12,7 +12,7 @@ for theme in '' '-Green' '-Grey' '-Orange' '-Pink' '-Purple' '-Red' '-Teal' '-Ye
                         theme_color='#396847'
                         ;;
                     -Grey)
-                        theme_color='#4c4769'
+                        theme_color='#39506d'
                         ;;
                     -Orange)
                         theme_color='#955f61'
@@ -68,7 +68,7 @@ for theme in '' '-Green' '-Grey' '-Orange' '-Pink' '-Purple' '-Red' '-Teal' '-Ye
                     esac
                 fi
 
-                if [[ "$type" == '-Nightfox' ]]; then
+                if [[ "$type" == '-Duskfox' ]]; then
                     background_color='#f6f2ee'
 
                     case "$theme" in
@@ -79,7 +79,7 @@ for theme in '' '-Green' '-Grey' '-Orange' '-Pink' '-Purple' '-Red' '-Teal' '-Ye
                             theme_color='#396847'
                             ;;
                         -Grey)
-                            theme_color='#39506d'
+                            theme_color='#4c4769'
                             ;;
                         -Orange)
                             theme_color='#955f61'
@@ -172,31 +172,31 @@ for theme in '' '-Green' '-Grey' '-Orange' '-Pink' '-Purple' '-Red' '-Teal' '-Ye
             else
                 case "$theme" in
                     '')
-                        theme_color='#5ebdd5'
+                        theme_color='#719cd6'
                         ;;
                     -Green)
-                        theme_color='#b1d196'
+                        theme_color='#81b29a'
                         ;;
                     -Grey)
-                        theme_color='#cdcbe0'
+                        theme_color='#e4dcd4'
                         ;;
                     -Orange)
-                        theme_color='#f0a4a2'
+                        theme_color='#f4a261'
                         ;;
                     -Pink)
-                        theme_color='#eb98c3'
+                        theme_color='#d67ad2'
                         ;;
                     -Purple)
-                        theme_color='#c4a7e7'
+                        theme_color='#9d79d6'
                         ;;
                     -Red)
-                        theme_color='#eb6f92'
+                        theme_color='#c94f6d'
                         ;;
                     -Teal)
-                        theme_color='#9ccfd8'
+                        theme_color='#63cdcf'
                         ;;
                     -Yellow)
-                        theme_color='#f9cb8c'
+                        theme_color='#dbc074'
                         ;;
                 esac
 
@@ -234,36 +234,37 @@ for theme in '' '-Green' '-Grey' '-Orange' '-Pink' '-Purple' '-Red' '-Teal' '-Ye
                     esac
                 fi
 
-                if [[ "$type" == '-Nightfox' ]]; then
-                    background_color='#192330'
+                if [[ "$type" == '-Duskfox' ]]; then
+                    background_color='#232136'
 
                     case "$theme" in
+
                         '')
-                            theme_color='#719cd6'
+                            theme_color='#5ebdd5'
                             ;;
                         -Green)
-                            theme_color='#81b29a'
+                            theme_color='#b1d196'
                             ;;
                         -Grey)
-                            theme_color='#e4dcd4'
+                            theme_color='#cdcbe0'
                             ;;
                         -Orange)
-                            theme_color='#f4a261'
+                            theme_color='#f0a4a2'
                             ;;
                         -Pink)
-                            theme_color='#d67ad2'
+                            theme_color='#eb98c3'
                             ;;
                         -Purple)
-                            theme_color='#9d79d6'
+                            theme_color='#c4a7e7'
                             ;;
                         -Red)
-                            theme_color='#c94f6d'
+                            theme_color='#eb6f92'
                             ;;
                         -Teal)
-                            theme_color='#63cdcf'
+                            theme_color='#9ccfd8'
                             ;;
                         -Yellow)
-                            theme_color='#dbc074'
+                            theme_color='#f9cb8c'
                             ;;
                     esac
                 fi
@@ -342,14 +343,14 @@ for theme in '' '-Green' '-Grey' '-Orange' '-Pink' '-Purple' '-Red' '-Teal' '-Ye
                 if [[ "$color" == '' ]]; then
                     sed -i "s/#2848a9/${theme_color}/g" "assets${theme}${color}${type}.svg"
                 else
-                    sed -i "s/#5ebdd5/${theme_color}/g" "assets${theme}${color}${type}.svg"
+                    sed -i "s/#719cd6/${theme_color}/g" "assets${theme}${color}${type}.svg"
                 fi
             elif [[ "$theme" != '' ]]; then
                 cp -r "assets${color}.svg" "assets${theme}${color}.svg"
                 if [[ "$color" == '' ]]; then
                     sed -i "s/#2848a9/${theme_color}/g" "assets${theme}${color}.svg"
                 else
-                    sed -i "s/#5ebdd5/${theme_color}/g" "assets${theme}${color}.svg"
+                    sed -i "s/#719cd6/${theme_color}/g" "assets${theme}${color}.svg"
                 fi
             fi
 
