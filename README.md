@@ -10,9 +10,9 @@
 </p>
 
 A GTK theme based on the colours of [EdenEast's](https://github.com/EdenEast) great theme: [Nightfox for Neovim](https://github.com/EdenEast/nightfox.nvim) <br>
-the [VinceLiuice's](https://github.com/vinceliuice) awesome: [Magnetic GTK theme](https://github.com/vinceliuice/Magnetic-gtk-theme), and the creativity of [Gusbemacbe's](https://github.com/gusbemacbe): [Suru Plus Icon Theme](https://github.com/gusbemacbe/suru-plus).
+the [VinceLiuice's](https://github.com/vinceliuice) Awesome GTK Themes and the creativity of [Gusbemacbe's](https://github.com/gusbemacbe): [Suru Plus Icon Theme](https://github.com/gusbemacbe/suru-plus).
 
-![Nightfox](https://raw.githubusercontent.com/Fausto-Korpsvart/Nightfox-GTK-Theme/main/extra/screenshots/Nightfox-Dusk.png)
+![Nightfox](https://raw.githubusercontent.com/Fausto-Korpsvart/Nightfox-GTK-Theme/main/extra/screenshots/Nightfox.png)
 
 > [!NOTE]
 > The theme is more focused on the Gnome Desktop, but supports Cinnamon, XFCE, Mate, etc. with generic styles.
