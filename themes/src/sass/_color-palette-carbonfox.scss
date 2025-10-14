@@ -1,40 +1,40 @@
 //  Carbonfox Color Palette
 
 // Blue
-$blue-light: #2848a9;
-$blue-dark: #78a9ff;
+$blue-light: #2a3a52;
+$blue-dark: #5a6a87;
 
 // Cyan
-$cyan-light: #50848c;
-$cyan-dark: #3ddbd9;
+$cyan-light: #2a525a;
+$cyan-dark: #5a8a8f;
 
 // Green
-$green-light: #396847;
-$green-dark: #25be6a;
+$green-light: #2f4a3e;
+$green-dark: #5a7a67;
 
 // Orange
-$orange-light: #955f61;
-$orange-dark: #dd9024;
+$orange-light: #7a452a;
+$orange-dark: #bf7a5a;
 
 // Pink
-$pink-light: #a440b5;
-$pink-dark: #ff7eb6;
+$pink-light: #7a3a5a;
+$pink-dark: #bf7290;
 
 // Purple
-$purple-light: #6e33ce;
-$purple-dark: #be95ff;
+$purple-light: #4a2a5a;
+$purple-dark: #7a5a87;
 
 // Red
-$red-light: #a5222f;
-$red-dark: #ee5396;
+$red-light: #7a2f3b;
+$red-dark: #b35a67;
 
 // Teal
-$teal-light: #287980;
-$teal-dark: #08bdba;
+$teal-light: #2a4a3f;
+$teal-dark: #5a8a72;
 
 // Yellow
-$yellow-light: #ac5402;
-$yellow-dark: #eea846;
+$yellow-light: #7a673f;
+$yellow-dark: #bfa860;
 
 // Grey
 $grey-050: #ebebeb;
@@ -68,6 +68,6 @@ $default-light: $blue-light;
 $default-dark: $blue-dark;
 
 // Button
-$button-close: if($topbar == 'light', #a5222f, #ee5396);
-$button-max: if($topbar == 'light', #396847, #25be6a);
-$button-min: if($topbar == 'light', #ac5402, #eea846);
+$button-close: if($topbar == 'light', #7a2f3b, #b35a67);
+$button-max: if($topbar == 'light', #2f4a3e, #5a7a67);
+$button-min: if($topbar == 'light', #7a452a, #bf7a5a);
